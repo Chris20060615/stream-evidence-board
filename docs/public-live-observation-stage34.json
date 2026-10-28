@@ -1,0 +1,22 @@
+{
+  "artifact": "public-limited-live-observation-summary",
+  "runtimeVersion": "0.22.1",
+  "providedOnBeijing": "2026-10-28",
+  "ownPublicChannel": "knaaaris",
+  "actualBackendSampleCount": 42,
+  "observedEffects": [
+    "Round open with0 votes",
+    "A=1,B=0,total=1",
+    "A=0,B=1,total=1",
+    "Source cue active with a15-second deadline"
+  ],
+  "sourceProvenance": "Actual read-only app aggregate observations after participant-operated device authorization and chat self-test.",
+  "userProvidedStaticScreenshotsReviewed": true,
+  "screenshotScope": "Two scroll positions jointly cover claim/counts and source/footer sections; not a one-viewport or OBS presentation proof.",
+  "screenshotsIncludedInThisSourcePackage": false,
+  "rawTwitchMessagesOrVoterIdsIncluded": false,
+  "credentialsIncluded": false,
+  "syntheticInputSentDuringLiveObservation": false,
+  "chatSentByAgent": false,
+  "limit": "Self-test and still-image review; not audience research, educational effect, latency, OBS/reconnection proof, recorded video or submission. Connection statements apply to sampled instants."
+}

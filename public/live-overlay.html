@@ -1,0 +1,41 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Stream Evidence Board · Twitch</title>
+  <link rel="stylesheet" href="/live-overlay.css">
+  <script type="module" src="/live-overlay.mjs"></script>
+</head>
+<body>
+  <main>
+    <header><span>STREAM EVIDENCE BOARD</span><strong id="status" role="status">TWITCH STATUS UNVERIFIED</strong></header>
+    <h1 id="claim">Waiting for the owner host…</h1>
+    <p id="prompt"></p>
+    <section class="choices" aria-label="Source inspection preference">
+      <div>A · <span id="a-label"></span><strong id="a-count">0</strong><progress id="a-bar" max="100" value="0"></progress></div>
+      <div>B · <span id="b-label"></span><strong id="b-count">0</strong><progress id="b-bar" max="100" value="0"></progress></div>
+    </section>
+    <p id="vote">No current state</p>
+    <aside aria-labelledby="sources-title">
+      <h2 id="sources-title">Evidence to inspect</h2>
+      <p id="cue" role="status" aria-live="polite" hidden></p>
+      <ol class="source-list">
+        <li id="source-1" class="source-card" data-review="pending">
+          <div class="source-meta"><span class="source-number">A · SOURCE 1</span><span id="source-1-review" class="source-status" role="status" aria-live="polite">Pending host review</span></div>
+          <a id="source" target="_blank" rel="noopener noreferrer">Waiting for source 1</a>
+          <p id="source-1-note" class="source-note"></p>
+        </li>
+        <li id="source-2" class="source-card" data-review="pending">
+          <div class="source-meta"><span class="source-number">B · SOURCE 2</span><span id="source-2-review" class="source-status" role="status" aria-live="polite">Pending host review</span></div>
+          <a id="source-2-link" target="_blank" rel="noopener noreferrer">Waiting for source 2</a>
+          <p id="source-2-note" class="source-note"></p>
+        </li>
+      </ol>
+      <p class="review-note">Viewed records the host's manual review. Opening a link or voting does not mark it viewed.</p>
+      <p class="commands">Chat: !vote a · !vote b · !source</p>
+    </aside>
+    <footer>Votes choose which source to inspect first. No learning or research outcome is measured.</footer>
+  </main>
+</body>
+</html>

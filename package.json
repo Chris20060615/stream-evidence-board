@@ -1,0 +1,25 @@
+{
+  "name": "stream-evidence-board",
+  "version": "0.22.1",
+  "private": true,
+  "type": "module",
+  "description": "Own-channel Twitch evidence board with an observed real self-test; final media and submission pending.",
+  "scripts": {
+    "start": "node src/server.mjs",
+    "test": "node --test",
+    "check": "node --check src/server.mjs && node --check src/engine.mjs && node --check src/eventsub-inbox.mjs && node --check src/subscription-preflight.mjs && node --check src/twitch-session.mjs && node --check src/twitch-http-adapters.mjs && node --check src/twitch-websocket-adapter.mjs && node --check src/ingress-isolation.mjs && node --check src/credential-vault.mjs && node --check src/credential-session-host.mjs && node --check src/staged-session-host.mjs && node --check src/device-grant.mjs && node --check src/device-grant-http.mjs && node --check src/device-session-owner.mjs && node --check scripts/rehearse-eventsub.mjs && node --check scripts/rehearse-subscription.mjs && node --check public/app.mjs && node --check public/overlay.mjs && node --check src/host-entry-gate.mjs && node --check scripts/review-host-entry.mjs && node --check src/operator-login.mjs && node --check scripts/authorize-twitch.mjs && node --check src/native-live-host.mjs && node --check src/live-tally.mjs && node --check src/live-overlay-server.mjs && node --check scripts/start-twitch.mjs && node --check public/live-overlay.mjs && node --check src/twurple-live-host.mjs && node --check src/operator-confirmation.mjs",
+    "rehearse:eventsub": "node scripts/rehearse-eventsub.mjs",
+    "rehearse:subscription": "node scripts/rehearse-subscription.mjs",
+    "review:host-entry": "node scripts/review-host-entry.mjs",
+    "authorize:twitch": "node scripts/authorize-twitch.mjs",
+    "start:twitch": "node scripts/start-twitch.mjs"
+  },
+  "dependencies": {
+    "@twurple/api": "8.2.0",
+    "@twurple/auth": "8.2.0",
+    "@twurple/eventsub-ws": "8.2.0"
+  },
+  "engines": {
+    "node": ">=24"
+  }
+}

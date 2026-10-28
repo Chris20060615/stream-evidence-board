@@ -1,0 +1,263 @@
+{
+  "provenance": "synthetic",
+  "description": "Offline hand-authored protocol fixtures. No frames, account identities or audience events were captured from Twitch.",
+  "clockStart": "2026-10-25T00:00:00.000Z",
+  "configuration": {
+    "broadcasterId": "100",
+    "readerId": "200",
+    "subscriptionId": "synthetic-sub-1"
+  },
+  "frames": [
+    {
+      "elapsedMs": 0,
+      "label": "Synthetic welcome",
+      "frame": {
+        "metadata": {
+          "message_id": "synthetic-welcome",
+          "message_type": "session_welcome",
+          "message_timestamp": "2026-10-25T00:00:00.000000001Z"
+        },
+        "payload": {
+          "session": {
+            "id": "synthetic-session-1",
+            "status": "connected",
+            "keepalive_timeout_seconds": 10,
+            "connected_at": "2026-10-25T00:00:00.000000001Z",
+            "reconnect_url": null
+          }
+        }
+      }
+    },
+    {
+      "elapsedMs": 1000,
+      "label": "Synthetic command normalizes but remains untrusted",
+      "frame": {
+        "metadata": {
+          "message_id": "synthetic-delivery-1",
+          "message_type": "notification",
+          "message_timestamp": "2026-10-25T00:00:01.000000001Z",
+          "subscription_type": "channel.chat.message",
+          "subscription_version": "1"
+        },
+        "payload": {
+          "subscription": {
+            "id": "synthetic-sub-1",
+            "type": "channel.chat.message",
+            "version": "1",
+            "status": "enabled",
+            "condition": {
+              "broadcaster_user_id": "100",
+              "user_id": "200"
+            },
+            "transport": {
+              "method": "websocket",
+              "session_id": "synthetic-session-1"
+            }
+          },
+          "event": {
+            "broadcaster_user_id": "100",
+            "chatter_user_id": "300",
+            "message_id": "synthetic-chat-1",
+            "message": {
+              "text": "!vote a"
+            },
+            "source_broadcaster_user_id": null
+          }
+        }
+      }
+    },
+    {
+      "elapsedMs": 2000,
+      "label": "Same envelope replay",
+      "frame": {
+        "metadata": {
+          "message_id": "synthetic-delivery-1",
+          "message_type": "notification",
+          "message_timestamp": "2026-10-25T00:00:01.000000001Z",
+          "subscription_type": "channel.chat.message",
+          "subscription_version": "1"
+        },
+        "payload": {
+          "subscription": {
+            "id": "synthetic-sub-1",
+            "type": "channel.chat.message",
+            "version": "1",
+            "status": "enabled",
+            "condition": {
+              "broadcaster_user_id": "100",
+              "user_id": "200"
+            },
+            "transport": {
+              "method": "websocket",
+              "session_id": "synthetic-session-1"
+            }
+          },
+          "event": {
+            "broadcaster_user_id": "100",
+            "chatter_user_id": "300",
+            "message_id": "synthetic-chat-1",
+            "message": {
+              "text": "!vote a"
+            },
+            "source_broadcaster_user_id": null
+          }
+        }
+      }
+    },
+    {
+      "elapsedMs": 3000,
+      "label": "Same chat, different delivery",
+      "frame": {
+        "metadata": {
+          "message_id": "synthetic-delivery-2",
+          "message_type": "notification",
+          "message_timestamp": "2026-10-25T00:00:03.000000001Z",
+          "subscription_type": "channel.chat.message",
+          "subscription_version": "1"
+        },
+        "payload": {
+          "subscription": {
+            "id": "synthetic-sub-1",
+            "type": "channel.chat.message",
+            "version": "1",
+            "status": "enabled",
+            "condition": {
+              "broadcaster_user_id": "100",
+              "user_id": "200"
+            },
+            "transport": {
+              "method": "websocket",
+              "session_id": "synthetic-session-1"
+            }
+          },
+          "event": {
+            "broadcaster_user_id": "100",
+            "chatter_user_id": "300",
+            "message_id": "synthetic-chat-1",
+            "message": {
+              "text": "!vote a"
+            },
+            "source_broadcaster_user_id": null
+          }
+        }
+      }
+    },
+    {
+      "elapsedMs": 4000,
+      "label": "Wrong broadcaster is rejected",
+      "frame": {
+        "metadata": {
+          "message_id": "synthetic-delivery-wrong",
+          "message_type": "notification",
+          "message_timestamp": "2026-10-25T00:00:04.000000001Z",
+          "subscription_type": "channel.chat.message",
+          "subscription_version": "1"
+        },
+        "payload": {
+          "subscription": {
+            "id": "synthetic-sub-1",
+            "type": "channel.chat.message",
+            "version": "1",
+            "status": "enabled",
+            "condition": {
+              "broadcaster_user_id": "100",
+              "user_id": "200"
+            },
+            "transport": {
+              "method": "websocket",
+              "session_id": "synthetic-session-1"
+            }
+          },
+          "event": {
+            "broadcaster_user_id": "999",
+            "chatter_user_id": "300",
+            "message_id": "synthetic-chat-wrong",
+            "message": {
+              "text": "!vote a"
+            },
+            "source_broadcaster_user_id": null
+          }
+        }
+      }
+    },
+    {
+      "elapsedMs": 5000,
+      "label": "Synthetic keepalive",
+      "frame": {
+        "metadata": {
+          "message_id": "synthetic-keepalive",
+          "message_type": "session_keepalive",
+          "message_timestamp": "2026-10-25T00:00:05.000000001Z"
+        },
+        "payload": {}
+      }
+    },
+    {
+      "elapsedMs": 6000,
+      "label": "Synthetic authorization revocation",
+      "frame": {
+        "metadata": {
+          "message_id": "synthetic-revoke",
+          "message_type": "revocation",
+          "message_timestamp": "2026-10-25T00:00:06.000000001Z",
+          "subscription_type": "channel.chat.message",
+          "subscription_version": "1"
+        },
+        "payload": {
+          "subscription": {
+            "id": "synthetic-sub-1",
+            "type": "channel.chat.message",
+            "version": "1",
+            "status": "authorization_revoked",
+            "condition": {
+              "broadcaster_user_id": "100",
+              "user_id": "200"
+            },
+            "transport": {
+              "method": "websocket",
+              "session_id": "synthetic-session-1"
+            }
+          }
+        }
+      }
+    },
+    {
+      "elapsedMs": 7000,
+      "label": "No normalization after revocation",
+      "frame": {
+        "metadata": {
+          "message_id": "synthetic-delivery-after",
+          "message_type": "notification",
+          "message_timestamp": "2026-10-25T00:00:07.000000001Z",
+          "subscription_type": "channel.chat.message",
+          "subscription_version": "1"
+        },
+        "payload": {
+          "subscription": {
+            "id": "synthetic-sub-1",
+            "type": "channel.chat.message",
+            "version": "1",
+            "status": "enabled",
+            "condition": {
+              "broadcaster_user_id": "100",
+              "user_id": "200"
+            },
+            "transport": {
+              "method": "websocket",
+              "session_id": "synthetic-session-1"
+            }
+          },
+          "event": {
+            "broadcaster_user_id": "100",
+            "chatter_user_id": "300",
+            "message_id": "synthetic-chat-after",
+            "message": {
+              "text": "!vote a"
+            },
+            "source_broadcaster_user_id": null
+          }
+        }
+      }
+    }
+  ]
+}

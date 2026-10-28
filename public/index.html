@@ -1,0 +1,41 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8"><meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Stream Evidence Board · Local prototype</title>
+  <link rel="stylesheet" href="/style.css"><script type="module" src="/app.mjs"></script>
+</head>
+<body>
+  <header class="topbar"><a class="brand" href="/">SEB<span>Stream Evidence Board</span></a><span class="mode">SIMULATION · NO TWITCH CONNECTION</span></header>
+  <main>
+    <section class="intro"><div><p class="eyebrow">A source is a starting point.</p><h1>Put the evidence<br>on stream.</h1><p class="lede">One claim. Two ways to investigate. Give your audience a source they can actually open.</p></div><div class="stage-note"><span class="step">LOCAL BUILD / 01</span><p>Candidate concept<br>Engineering demonstration</p><a href="/overlay" target="_blank" rel="noopener">Open overlay ↗</a></div></section>
+    <div class="workspace">
+      <section class="board panel" aria-labelledby="claim-label">
+        <div class="section-top"><p id="claim-label" class="eyebrow">01 / On the board</p><span id="phase" class="pill">Loading</span></div>
+        <h2 id="claim">Loading the local claim…</h2><p id="prompt" class="prompt"></p>
+        <div class="choices" aria-label="Simulated vote totals">
+          <div class="choice"><div class="choice-line"><span class="letter">A</span><span id="choice-a"></span><strong id="count-a">0</strong></div><progress id="bar-a" max="100" value="0" aria-label="Option A percentage"></progress></div>
+          <div class="choice"><div class="choice-line"><span class="letter">B</span><span id="choice-b"></span><strong id="count-b">0</strong></div><progress id="bar-b" max="100" value="0" aria-label="Option B percentage"></progress></div>
+        </div>
+        <div class="vote-meta"><span id="total">0 simulated voters</span><span id="timer">No active vote</span></div>
+        <div id="source-panel" class="source"><p id="source-cue" class="source-cue" role="status" aria-live="polite" hidden></p><span class="eyebrow">Follow the source</span><a id="source-link" target="_blank" rel="noopener noreferrer">Loading source ↗</a><p id="source-note"></p></div>
+        <p class="micro">Votes show a choice in this simulation. They are not evidence of learning, accuracy, or audience research.</p>
+      </section>
+      <aside class="control panel" aria-labelledby="control-label">
+        <p id="control-label" class="eyebrow">02 / Producer controls</p><h2>Rehearse the flow.</h2>
+        <div class="connection"><span id="connection-dot" class="dot"></span><div><strong id="connection">Simulator disconnected</strong><small id="sync">Waiting for local server</small></div></div>
+        <button id="connect" class="button subtle" type="button">Connect simulator</button>
+        <div class="button-row"><button id="open" class="button primary" type="button">Open 60s vote</button><button id="close" class="button subtle" type="button">Close vote</button></div>
+        <hr>
+        <form id="command-form"><label for="viewer">Simulated viewer</label><select id="viewer"><option value="sim-viewer-1">Simulated viewer 01</option><option value="sim-viewer-2">Simulated viewer 02</option><option value="sim-viewer-3">Simulated viewer 03</option></select><label for="command">Simulated chat command</label><div class="input-row"><input id="command" value="!vote a" maxlength="301" autocomplete="off" spellcheck="false" required><button class="button primary" type="submit">Send</button></div></form>
+        <p class="command-help"><code>!vote a</code> <code>!vote b</code> <code>!source</code> <code>!help</code></p>
+        <button id="replay" type="button" class="text-button" disabled>Replay last event (dedupe check)</button>
+        <div id="feedback" class="feedback" role="status">Connect the simulator, then open a voting window.</div>
+        <details><summary>Recent simulation responses</summary><ol id="event-log" class="event-log"></ol></details>
+        <button id="reset" type="button" class="text-button reset">Reset local session</button>
+      </aside>
+    </div>
+    <footer><span>Local prototype · in-memory state · no accounts or API keys</span><span>Real Twitch validation is pending.</span></footer>
+  </main>
+</body>
+</html>

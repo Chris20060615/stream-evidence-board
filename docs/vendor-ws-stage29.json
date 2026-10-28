@@ -1,0 +1,122 @@
+{
+  "artifact": "vendored-pinned-ws-source",
+  "asOfBeijing": "2026-10-27T15:38:19.332431+08:00",
+  "upstreamVersion": "8.22.0",
+  "upstreamCommit": "297202cdae9b0590629821373b3b679c407f3431",
+  "pinnedArchiveSha256": "312E62E1D61AE110FF4069E23AFA498A0D1B17DC44DDA8D38FDD103DADA79E60",
+  "copiedCodeAndLicense": [
+    {
+      "path": "vendor/ws/index.js",
+      "upstreamPath": "index.js",
+      "bytes": 796,
+      "sha256": "924564D5BE26D59B9682C4263F68320E48DDE7240BD2D1AD17EC305537429DD2",
+      "matchesPinnedArchive": true
+    },
+    {
+      "path": "vendor/ws/lib/buffer-util.js",
+      "upstreamPath": "lib/buffer-util.js",
+      "bytes": 3056,
+      "sha256": "8B0A45739132F82E25EA13163780ABF547CCFE989267F3EB7ABB475BEEC92DA3",
+      "matchesPinnedArchive": true
+    },
+    {
+      "path": "vendor/ws/lib/constants.js",
+      "upstreamPath": "lib/constants.js",
+      "bytes": 503,
+      "sha256": "391E823142B8B370E55A2FD32B022DEAF03B8415C56000009674EBC86A0B4F86",
+      "matchesPinnedArchive": true
+    },
+    {
+      "path": "vendor/ws/lib/event-target.js",
+      "upstreamPath": "lib/event-target.js",
+      "bytes": 7321,
+      "sha256": "C45D3C6E12D170C860C0C3F1A050AA0F864D9806632B609A1E607D675ABA128C",
+      "matchesPinnedArchive": true
+    },
+    {
+      "path": "vendor/ws/lib/extension.js",
+      "upstreamPath": "lib/extension.js",
+      "bytes": 6183,
+      "sha256": "852564F0F6B460287043803EAE732666FB5610F676874354FC89F06AA4E986ED",
+      "matchesPinnedArchive": true
+    },
+    {
+      "path": "vendor/ws/lib/limiter.js",
+      "upstreamPath": "lib/limiter.js",
+      "bytes": 1034,
+      "sha256": "E0469D4B83F6BA764B15F80E1766B75C136FBFF68F048F4C050F0B1C7F065F69",
+      "matchesPinnedArchive": true
+    },
+    {
+      "path": "vendor/ws/lib/permessage-deflate.js",
+      "upstreamPath": "lib/permessage-deflate.js",
+      "bytes": 14669,
+      "sha256": "16A91536988A53C23047EE5882392068728A839A244178C3B09B8C54982F58B0",
+      "matchesPinnedArchive": true
+    },
+    {
+      "path": "vendor/ws/lib/receiver.js",
+      "upstreamPath": "lib/receiver.js",
+      "bytes": 17439,
+      "sha256": "A6ADA33C9A2D54EAF595824B821EA89CA2C6395F89AA06755C52142148274884",
+      "matchesPinnedArchive": true
+    },
+    {
+      "path": "vendor/ws/lib/sender.js",
+      "upstreamPath": "lib/sender.js",
+      "bytes": 16886,
+      "sha256": "D0791D30C3DEFD44DCABBDDB879A901C757993FEA2C00A7FFEA01D53B23B4B77",
+      "matchesPinnedArchive": true
+    },
+    {
+      "path": "vendor/ws/lib/stream.js",
+      "upstreamPath": "lib/stream.js",
+      "bytes": 4204,
+      "sha256": "A56FCB6E2B152097EE820B6F5410B1F71E59819B45D08D9F8BDA588FE39070EC",
+      "matchesPinnedArchive": true
+    },
+    {
+      "path": "vendor/ws/lib/subprotocol.js",
+      "upstreamPath": "lib/subprotocol.js",
+      "bytes": 1498,
+      "sha256": "BE3F6323D6F549568577DCBA9004C1479D95C65A7ABB0FE0C582875B9FAC0B7C",
+      "matchesPinnedArchive": true
+    },
+    {
+      "path": "vendor/ws/lib/validation.js",
+      "upstreamPath": "lib/validation.js",
+      "bytes": 3903,
+      "sha256": "41CE8E83D0D434132E1704895FEDB91F6703A701B42D91C80954AB29B2845593",
+      "matchesPinnedArchive": true
+    },
+    {
+      "path": "vendor/ws/lib/websocket-server.js",
+      "upstreamPath": "lib/websocket-server.js",
+      "bytes": 17022,
+      "sha256": "6D8DD89A841748C80445FD5FCDB5BA8005369B53CC3525135E11304C8B9C55E5",
+      "matchesPinnedArchive": true
+    },
+    {
+      "path": "vendor/ws/lib/websocket.js",
+      "upstreamPath": "lib/websocket.js",
+      "bytes": 37848,
+      "sha256": "7CCF305925F0CDB74E06B75B4C84DE134B1BD771A220EF409B24520DEF08128F",
+      "matchesPinnedArchive": true
+    },
+    {
+      "path": "vendor/ws/LICENSE",
+      "upstreamPath": "LICENSE",
+      "bytes": 1183,
+      "sha256": "2B29DCFE0D6471F7E8C92C5FB38C9F93EDEE10330937055440192F1832B1ECEF",
+      "matchesPinnedArchive": true
+    }
+  ],
+  "generatedCommonJsBoundary": {
+    "path": "vendor/ws/package.json",
+    "sha256": "AA68C2E5B776910C13EB4D45F85588DD9C61CF6332339A31F75586CAA8AC9E5E",
+    "type": "commonjs",
+    "isOriginalUpstreamPackageJson": false
+  },
+  "upstreamSourceBytesModified": false,
+  "scope": "Source pin/license verification; native service/TLS/client behavior remains unverified in the new composition."
+}

@@ -1,0 +1,64 @@
+TAP version 13
+# Subtest: operator argument parser is inert by default and rejects unknown/secret/duplicate flags
+ok 1 - operator argument parser is inert by default and rejects unknown/secret/duplicate flags
+  ---
+  duration_ms: 4.9501
+  type: 'test'
+  ...
+# Subtest: public plan is usable without a terminal and never calls a network port
+ok 2 - public plan is usable without a terminal and never calls a network port
+  ---
+  duration_ms: 1.5119
+  type: 'test'
+  ...
+# Subtest: authorize rejects redirected input/output before prompting or fetching
+ok 3 - authorize rejects redirected input/output before prompting or fetching
+  ---
+  duration_ms: 0.3585
+  type: 'test'
+  ...
+# Subtest: wrong typed review cancels without requesting a device code
+ok 4 - wrong typed review cancels without requesting a device code
+  ---
+  duration_ms: 1.8919
+  type: 'test'
+  ...
+# Subtest: accepted review composes actual device ports, grant flow and identity validation with synthetic HTTP
+ok 5 - accepted review composes actual device ports, grant flow and identity validation with synthetic HTTP
+  ---
+  duration_ms: 71.7177
+  type: 'test'
+  ...
+# Subtest: a different validated user fails own-channel binding without exposing service diagnostics
+ok 6 - a different validated user fails own-channel binding without exposing service diagnostics
+  ---
+  duration_ms: 3.5113
+  type: 'test'
+  ...
+# Subtest: aborting the concrete review settles promptly with no network request
+ok 7 - aborting the concrete review settles promptly with no network request
+  ---
+  duration_ms: 0.5541
+  type: 'test'
+  ...
+# Subtest: cancellation after the private prompt retires polling and never validates a token
+ok 8 - cancellation after the private prompt retires polling and never validates a token
+  ---
+  duration_ms: 2.0586
+  type: 'test'
+  ...
+# Subtest: actual CLI help and redirected authorize remain inert without echoing invalid secret input
+ok 9 - actual CLI help and redirected authorize remain inert without echoing invalid secret input
+  ---
+  duration_ms: 354.4491
+  type: 'test'
+  ...
+1..9
+# tests 9
+# suites 0
+# pass 9
+# fail 0
+# cancelled 0
+# skipped 0
+# todo 0
+# duration_ms 610.8172

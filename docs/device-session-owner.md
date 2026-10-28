@@ -1,0 +1,33 @@
+# Private device/session ownership harness
+
+Version0.15.0 adds `src/device-session-owner.mjs`, composing the [device/token HTTP ports](device-grant-http.md), [grant lifecycle](device-grant.md) and [staged session host](staged-session-host.md). Every I/O dependency is explicit. It performs no default fetch, browser navigation, account/app registration, saved-credential lookup, server/UI integration or trusted live issuance. Synthetic success keeps public network, authorization and real-Twitch flags false.
+
+## Interface and owned lifetime
+
+`createDeviceSessionOwner(configuration)` requires `clientId`, `broadcasterId`, `readerId`, `fetchImpl`, `connect`, `exchange` and private `onPrompt`. Clock, timers, operation/refresh timeouts, lease, card and board options may be supplied under the existing local policies. The channel/reader and request policies are inherited from the composed modules; there is no arbitrary raw event, grant, handle or scope argument in the public facade.
+
+The frozen facade exposes `start({signal}?)`, `cancel()`, `stop()`, `getState()`, `refresh({signal}?)`, `openVote(durationMs)`, `closeVote()`, `reset()` and an independent `simulation` facade. Construction starts no request. Start explicitly begins a device attempt; a concurrent or already owned session is busy until it is cancelled or retired. Start resolves after the private grant has been passed to staged start and identity validation/socket acquisition has succeeded. The socket may still await welcome/subscription; this result does not mean receiving events or an actual platform connection.
+
+The injected connect dependency must resolve to a plain own-data `{close}` port. A raw library instance or extra connection fields are not an additional interface here; compose an appropriate restricted port explicitly. Native promises and synchronous port results are supported at this wrapper boundary.
+
+The optional native start signal owns the entire attempt and resulting host lifetime. It remains effective after the inner grant harness completes and removes its own acquisition listener. Cancel retires acquisition, prompt lifetime and the staged host, while retaining the existing round/window and replay memory. A subsequent explicit start gets a fresh generation. Reset first retires ownership, then clears the staged round and requires another start; retained replay protection is preserved. Stop is terminal for this ownership harness. The separate simulation keeps its own cache and labels.
+
+Retirement detaches generation ownership before invoking abort/close hooks. A synchronous teardown barrier prevents a hook from starting replacement work while the old shared host is being revoked. Late device/token responses, prompt results, validation/socket completions and old socket callbacks cannot start or alter a later generation. Cancellation requests nonblocking teardown; physical connection closure and retained dependency copies are not guaranteed.
+
+## Private prompt and grant handoff
+
+`onPrompt(prompt,{signal,lifetimeSignal})` is a privileged hook. The prompt contains a user code, official activation address and expiry. None belongs in public controller/overlay state, chat, logs or recording. `signal` covers the pending hook operation; `lifetimeSignal` separately owns how long the displayed instructions remain current. Host UI code must observe it and remove instructions when it aborts on grant handoff, expiry, cancellation, failure or stop. Once a hook has returned, its operation signal alone does not represent the later instruction lifetime.
+
+The wrapper handles grant values privately and feeds them into the existing staged host. It exposes neither an `onGrant` hook nor a credential handle, resolver or manual event bridge. The host validates pinned identity/scope before opening an injected socket. The first admitted synthetic event still needs the host's current private acknowledgement scope; grant delivery, validation and welcome alone do not connect or tally the board.
+
+Grant-callback I/O timeout/abort must retire any pending host work as well. This covers a staged start that spans validation and socket waits while the grant callback has its own deadline. An old delayed completion cannot turn a failed handoff into success. Copy removal is not secure erasure and cannot recall a prompt or credential already retained by injected code.
+
+## Refresh, failure and evidence boundary
+
+Refresh is explicit and delegates to the existing staged host with the supplied exchange dependency. It retires the old transport before replacement and validates the replacement identity before a fresh socket. It acquires no new OAuth permission and supplies no default refresh HTTP client. Round deadlines and retained replay IDs are preserved. The owner observes host failure/expiry at public and callback boundaries; it does not certify physical network state or add a graceful two-socket reconnect handover.
+
+Synchronous refresh entry also has the teardown barrier, covering the old socket's abort/close and exchange-entry hooks. Those hooks cannot start replacement owner work or mutate the round while retirement is on the stack. The explicit exchange still runs for a current, non-aborted refresh; a reentrant stop prevents its invocation. Ordinary controls may resume while the later asynchronous refresh is pending. A terminal stop invoked from inside that barrier projects stopped/inactive immediately; child teardown completes after entry unwinds and settles the pending operation, without letting a later grant restart the owner.
+
+Public state combines lifecycle and redacted grant/staged aggregates, with fixed result/error text. Its private-operation projection contains no client/channel/session/subscription identifiers, device/user codes, activation URL, scope list, tokens, raw frames or hook results. Configured card/source content is public by design; callers must not place private values in it. Injected clocks, timers, fetch, socket, exchange and private UI hooks are trusted host code. Native promise observation at this new boundary does not change inherited modules' Promise semantics or create a sandbox.
+
+New checks use fake responses, timers, connections and synthetic credential canaries. The canonical README links the actual saved executions and fresh-candidate record. They establish local ownership, identity rejection, stale-result and cancellation behavior only. Account/application/OAuth consent, actual endpoint/client/TLS/Twitch behavior, trusted live event provenance, browser/OBS rendering, repository/video access and final publication/submission remain separate pending gates. No browser preview workaround is introduced.

@@ -1,0 +1,29 @@
+{
+  "artifact": "independent-read-only-source-review",
+  "stage": 28,
+  "asOfBeijing": "2026-10-26T19:40:04.395809+08:00",
+  "reviewer": "operator_review",
+  "scope": "new preflight source/script/tests and existing HTTP/grant/vault composition",
+  "blockingFindings": [],
+  "checksRerunByReviewer": false,
+  "realOAuthOrNetworkPerformed": false,
+  "requiredWording": "Local retirement does not revoke the Twitch application grant. This diagnostic does not retain a reusable live session and may require a separate later authorization.",
+  "wordingIncludedInOperatorContract": true,
+  "actualInteractiveTerminalVerified": false,
+  "liveChatOrOverlayVerified": false,
+  "independentPackageOrFinalReviewClaimed": false,
+  "reviewedSourceHashes": [
+    {
+      "path": "src/operator-login.mjs",
+      "sha256": "AE506054AF4D931681B5EAD2F75AF8F7113082062C38E6AB59A0E45EF5F43FFA"
+    },
+    {
+      "path": "scripts/authorize-twitch.mjs",
+      "sha256": "087B64D3BD541EA901458D6F5D8DDC2448C080391169FB8DBCA9FB847E8DDA1C"
+    },
+    {
+      "path": "test/operator-login.test.mjs",
+      "sha256": "99263835508703E7AACE4611C08588C9F60A80053541FF32E537D33959DE8A05"
+    }
+  ]
+}

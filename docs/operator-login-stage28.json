@@ -1,0 +1,50 @@
+{
+  "artifact": "operator-identity-preflight-implementation",
+  "stage": 28,
+  "asOfBeijing": "2026-10-26T19:40:04.395809+08:00",
+  "runtimeVersion": "0.20.0",
+  "priorRuntimeVersion": "0.19.0",
+  "priorCoreFilesUnchanged": 44,
+  "newFiles": [
+    "src/operator-login.mjs",
+    "scripts/authorize-twitch.mjs",
+    "test/operator-login.test.mjs"
+  ],
+  "focusedChecks": {
+    "tests": 9,
+    "passed": 9,
+    "failed": 0,
+    "skipped": 0,
+    "actualExitCode": 0,
+    "output": "docs/validation-stage28-focused.tap",
+    "sha256": "A49B08794753F073A5CE831CBC9A9B334777D858B6CD0AF3C113067955AC6C8B"
+  },
+  "focusedScope": "Synthetic streamed device/token/identity HTTP, manual clock, pretend in-memory TTYs and actual CLI inert modes.",
+  "sourceHashes": [
+    {
+      "path": "src/operator-login.mjs",
+      "sha256": "AE506054AF4D931681B5EAD2F75AF8F7113082062C38E6AB59A0E45EF5F43FFA"
+    },
+    {
+      "path": "scripts/authorize-twitch.mjs",
+      "sha256": "087B64D3BD541EA901458D6F5D8DDC2448C080391169FB8DBCA9FB847E8DDA1C"
+    },
+    {
+      "path": "test/operator-login.test.mjs",
+      "sha256": "99263835508703E7AACE4611C08588C9F60A80053541FF32E537D33959DE8A05"
+    }
+  ],
+  "defaultInert": true,
+  "explicitPrivateTerminalAndTypedReviewRequired": true,
+  "realNativeFetchAvailableOnlyAfterOperatorReview": true,
+  "actualOAuthExecuted": false,
+  "actualCredentialsUsed": false,
+  "realTwitchConnected": false,
+  "eventSubImplementedByThisEntry": false,
+  "liveBoardImplementedByThisEntry": false,
+  "retainsReusableLogin": false,
+  "remoteGrantRevoked": false,
+  "terminalRecorderProtectionGuaranteed": false,
+  "browserOrObsVerified": false,
+  "next": "Implement the separate production chat admission and visible overlay path; existing staged synthetic hosts cannot become genuine live evidence by rebinding ports."
+}

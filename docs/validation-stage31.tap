@@ -1,0 +1,3247 @@
+TAP version 13
+# Subtest: controller uses real HTML selectors and renders claim/source as plain text
+ok 1 - controller uses real HTML selectors and renders claim/source as plain text
+  ---
+  duration_ms: 39.1573
+  type: 'test'
+  ...
+# Subtest: controller action network failure retains stale warning through finally, then poll recovers
+ok 2 - controller action network failure retains stale warning through finally, then poll recovers
+  ---
+  duration_ms: 7.3458
+  type: 'test'
+  ...
+# Subtest: controller marks HTTP state errors unavailable even when response has an error code
+ok 3 - controller marks HTTP state errors unavailable even when response has an error code
+  ---
+  duration_ms: 7.2511
+  type: 'test'
+  ...
+# Subtest: replay sends the identical simulated event ID, viewer, command and original timestamp
+ok 4 - replay sends the identical simulated event ID, viewer, command and original timestamp
+  ---
+  duration_ms: 175.6402
+  type: 'test'
+  ...
+# Subtest: an older poll cannot overwrite a newer acknowledged controller action
+ok 5 - an older poll cannot overwrite a newer acknowledged controller action
+  ---
+  duration_ms: 8.8766
+  type: 'test'
+  ...
+# Subtest: overlay renders matching selectors and marks failure stale before recovering
+ok 6 - overlay renders matching selectors and marks failure stale before recovering
+  ---
+  duration_ms: 35.4543
+  type: 'test'
+  ...
+# Subtest: app.mjs: source cue labels synthetic activity once and hides at an expired snapshot without removing source
+ok 7 - app.mjs: source cue labels synthetic activity once and hides at an expired snapshot without removing source
+  ---
+  duration_ms: 8.7745
+  type: 'test'
+  ...
+# Subtest: app.mjs: network loss immediately hides cue and recovery respects disconnected state
+ok 8 - app.mjs: network loss immediately hides cue and recovery respects disconnected state
+  ---
+  duration_ms: 5.2888
+  type: 'test'
+  ...
+# Subtest: app.mjs: an unverified cue origin never gets the simulated-request badge
+ok 9 - app.mjs: an unverified cue origin never gets the simulated-request badge
+  ---
+  duration_ms: 5.002
+  type: 'test'
+  ...
+# Subtest: app.mjs: a hanging state request times out and hides the active cue
+ok 10 - app.mjs: a hanging state request times out and hides the active cue
+  ---
+  duration_ms: 4.9919
+  type: 'test'
+  ...
+# Subtest: app.mjs: local deadline hides the cue even before the next state poll
+ok 11 - app.mjs: local deadline hides the cue even before the next state poll
+  ---
+  duration_ms: 9.2499
+  type: 'test'
+  ...
+# Subtest: overlay.mjs: source cue labels synthetic activity once and hides at an expired snapshot without removing source
+ok 12 - overlay.mjs: source cue labels synthetic activity once and hides at an expired snapshot without removing source
+  ---
+  duration_ms: 32.6661
+  type: 'test'
+  ...
+# Subtest: overlay.mjs: network loss immediately hides cue and recovery respects disconnected state
+ok 13 - overlay.mjs: network loss immediately hides cue and recovery respects disconnected state
+  ---
+  duration_ms: 150.3838
+  type: 'test'
+  ...
+# Subtest: overlay.mjs: an unverified cue origin never gets the simulated-request badge
+ok 14 - overlay.mjs: an unverified cue origin never gets the simulated-request badge
+  ---
+  duration_ms: 115.8058
+  type: 'test'
+  ...
+# Subtest: overlay.mjs: a hanging state request times out and hides the active cue
+ok 15 - overlay.mjs: a hanging state request times out and hides the active cue
+  ---
+  duration_ms: 100.506
+  type: 'test'
+  ...
+# Subtest: overlay.mjs: local deadline hides the cue even before the next state poll
+ok 16 - overlay.mjs: local deadline hides the cue even before the next state poll
+  ---
+  duration_ms: 122.9682
+  type: 'test'
+  ...
+# Subtest: an older failed poll cannot suppress a newer confirmed action and cue
+ok 17 - an older failed poll cannot suppress a newer confirmed action and cue
+  ---
+  duration_ms: 75.7839
+  type: 'test'
+  ...
+# Subtest: retrying an unavailable controller does not temporarily revive a cached source cue
+ok 18 - retrying an unavailable controller does not temporarily revive a cached source cue
+  ---
+  duration_ms: 115.7788
+  type: 'test'
+  ...
+# Subtest: host is inert and exposes a frozen lifecycle interface without credentials or staged board access
+ok 19 - host is inert and exposes a frozen lifecycle interface without credentials or staged board access
+  ---
+  duration_ms: 10.6847
+  type: 'test'
+  ...
+# Subtest: constructor requires explicit own-channel dependencies and rejects unknown/getter options
+ok 20 - constructor requires explicit own-channel dependencies and rejects unknown/getter options
+  ---
+  duration_ms: 3.1904
+  type: 'test'
+  ...
+# Subtest: start validates the private access token before connect and subscribes only after welcome
+ok 21 - start validates the private access token before connect and subscribes only after welcome
+  ---
+  duration_ms: 25.9214
+  type: 'test'
+  ...
+# Subtest: a pending validation body prevents connect and stop aborts/settles the original start
+ok 22 - a pending validation body prevents connect and stop aborts/settles the original start
+  ---
+  duration_ms: 12.8937
+  type: 'test'
+  ...
+# Subtest: malformed grant/scope input is rejected before any HTTP or socket work without reading getters
+ok 23 - malformed grant/scope input is rejected before any HTTP or socket work without reading getters
+  ---
+  duration_ms: 1.5519
+  type: 'test'
+  ...
+# Subtest: validation rejects wrong client/user, missing read scope and HTTP401 without opening a socket
+ok 24 - validation rejects wrong client/user, missing read scope and HTTP401 without opening a socket
+  ---
+  duration_ms: 5.3867
+  type: 'test'
+  ...
+# Subtest: a mismatched subscription acknowledgement never enables chat intake
+ok 25 - a mismatched subscription acknowledgement never enables chat intake
+  ---
+  duration_ms: 3.1818
+  type: 'test'
+  ...
+# Subtest: guarded callback projects only five frozen fields and the existing board refuses its unverified origin
+ok 26 - guarded callback projects only five frozen fields and the existing board refuses its unverified origin
+  ---
+  duration_ms: 16.5404
+  type: 'test'
+  ...
+# Subtest: malformed input and cross-channel messages do not leak raw frames or reach the private callback
+ok 27 - malformed input and cross-channel messages do not leak raw frames or reach the private callback
+  ---
+  duration_ms: 2.6809
+  type: 'test'
+  ...
+# Subtest: callback exceptions and rejected promises stop intake with sanitized public state
+ok 28 - callback exceptions and rejected promises stop intake with sanitized public state
+  ---
+  duration_ms: 5.817
+  type: 'test'
+  ...
+# Subtest: refresh aborts/stops the old run before exchange, then validates a new token before a fresh socket/202
+ok 29 - refresh aborts/stops the old run before exchange, then validates a new token before a fresh socket/202
+  ---
+  duration_ms: 6.6587
+  type: 'test'
+  ...
+# Subtest: an old in-flight HTTP subscription is aborted before refresh exchange even if its body ignores abort
+ok 30 - an old in-flight HTTP subscription is aborted before refresh exchange even if its body ignores abort
+  ---
+  duration_ms: 9.2819
+  type: 'test'
+  ...
+# Subtest: fresh validation identity failure after refresh cannot connect or revive old callbacks
+ok 31 - fresh validation identity failure after refresh cannot connect or revive old callbacks
+  ---
+  duration_ms: 2.4288
+  type: 'test'
+  ...
+# Subtest: refresh exchange exceptions and malformed grants remain private and cannot open replacement sockets
+ok 32 - refresh exchange exceptions and malformed grants remain private and cannot open replacement sockets
+  ---
+  duration_ms: 5.499
+  type: 'test'
+  ...
+# Subtest: concurrent start/refresh calls cannot duplicate a pending refresh or replace its valid result
+ok 33 - concurrent start/refresh calls cannot duplicate a pending refresh or replace its valid result
+  ---
+  duration_ms: 5.3143
+  type: 'test'
+  ...
+# Subtest: concurrent operations during first validation are busy and revoke settles the original start
+ok 34 - concurrent operations during first validation are busy and revoke settles the original start
+  ---
+  duration_ms: 1.652
+  type: 'test'
+  ...
+# Subtest: refresh without an explicit started grant never invokes exchange
+ok 35 - refresh without an explicit started grant never invokes exchange
+  ---
+  duration_ms: 4.9976
+  type: 'test'
+  ...
+# Subtest: revoke is restartable while old callbacks remain powerless over a new explicit start
+ok 36 - revoke is restartable while old callbacks remain powerless over a new explicit start
+  ---
+  duration_ms: 4.1353
+  type: 'test'
+  ...
+# Subtest: stop is terminal/idempotent and does not await a hostile asynchronous connection close
+ok 37 - stop is terminal/idempotent and does not await a hostile asynchronous connection close
+  ---
+  duration_ms: 9.7974
+  type: 'test'
+  ...
+# Subtest: stop aborts/settles an ignored exchange and its late grant cannot revive the terminal host
+ok 38 - stop aborts/settles an ignored exchange and its late grant cannot revive the terminal host
+  ---
+  duration_ms: 3.622
+  type: 'test'
+  ...
+# Subtest: revoke during ignored exchange permits a new start without accepting the obsolete grant
+ok 39 - revoke during ignored exchange permits a new start without accepting the obsolete grant
+  ---
+  duration_ms: 5.2989
+  type: 'test'
+  ...
+# Subtest: external refresh abort is bounded despite ignored signal and does not echo its reason
+ok 40 - external refresh abort is bounded despite ignored signal and does not echo its reason
+  ---
+  duration_ms: 4.4102
+  type: 'test'
+  ...
+# Subtest: refresh timeout settles host ownership and late exchange completion cannot start a socket
+ok 41 - refresh timeout settles host ownership and late exchange completion cannot start a socket
+  ---
+  duration_ms: 7.8253
+  type: 'test'
+  ...
+# Subtest: pre-aborted and malformed refresh options never invoke exchange or descriptor getters
+ok 42 - pre-aborted and malformed refresh options never invoke exchange or descriptor getters
+  ---
+  duration_ms: 10.0711
+  type: 'test'
+  ...
+# Subtest: vault expiry at its exact deadline retires transport and observed expiry does not roll back
+ok 43 - vault expiry at its exact deadline retires transport and observed expiry does not roll back
+  ---
+  duration_ms: 5.379
+  type: 'test'
+  ...
+# Subtest: old credential expiry bounds an ignored refresh exchange earlier than refresh timeout
+ok 44 - old credential expiry bounds an ignored refresh exchange earlier than refresh timeout
+  ---
+  duration_ms: 2.6578
+  type: 'test'
+  ...
+# Subtest: hanging validation body times out and cancels its reader without leaking body or callback errors
+ok 45 - hanging validation body times out and cancels its reader without leaking body or callback errors
+  ---
+  duration_ms: 1.8009
+  type: 'test'
+  ...
+# Subtest: connect timeout settles start and closes a late connection without reviving its run
+ok 46 - connect timeout settles start and closes a late connection without reviving its run
+  ---
+  duration_ms: 2.2595
+  type: 'test'
+  ...
+# Subtest: raw fetch errors and secret-shaped response bodies produce fixed sanitized host failures
+ok 47 - raw fetch errors and secret-shaped response bodies produce fixed sanitized host failures
+  ---
+  duration_ms: 2.4797
+  type: 'test'
+  ...
+# Subtest: stop during fresh-token validation aborts new HTTP and late body completion cannot reconnect
+ok 48 - stop during fresh-token validation aborts new HTTP and late body completion cannot reconnect
+  ---
+  duration_ms: 6.4024
+  type: 'test'
+  ...
+# Subtest: reentrant callback revocation prevents subsequent old-frame intake and still permits explicit restart
+ok 49 - reentrant callback revocation prevents subsequent old-frame intake and still permits explicit restart
+  ---
+  duration_ms: 2.8424
+  type: 'test'
+  ...
+# Subtest: cleanup reentry cannot start another run during refresh or undo terminal stop
+ok 50 - cleanup reentry cannot start another run during refresh or undo terminal stop
+  ---
+  duration_ms: 6.0386
+  type: 'test'
+  ...
+# Subtest: grant descriptor reentry into stop cannot mint a usable host binding or start HTTP
+ok 51 - grant descriptor reentry into stop cannot mint a usable host binding or start HTTP
+  ---
+  duration_ms: 1.0465
+  type: 'test'
+  ...
+# Subtest: default timers settle a standalone host with an injected fetch that never resolves
+ok 52 - default timers settle a standalone host with an injected fetch that never resolves
+  ---
+  duration_ms: 913.8292
+  type: 'test'
+  ...
+# Subtest: factory is inert and exposes only a frozen host-only memory interface with false live flags
+ok 53 - factory is inert and exposes only a frozen host-only memory interface with false live flags
+  ---
+  duration_ms: 4.3484
+  type: 'test'
+  ...
+# Subtest: configuration bounds and descriptors reject without running getters or reflecting raw errors
+ok 54 - configuration bounds and descriptors reject without running getters or reflecting raw errors
+  ---
+  duration_ms: 4.3845
+  type: 'test'
+  ...
+# Subtest: valid grant yields an opaque frozen object, privileged resolution and no serializable secret surface
+ok 55 - valid grant yields an opaque frozen object, privileged resolution and no serializable secret surface
+  ---
+  duration_ms: 2.2965
+  type: 'test'
+  ...
+# Subtest: forged, copied, proxy-wrapped and foreign handles cannot resolve or revoke the current record
+ok 56 - forged, copied, proxy-wrapped and foreign handles cannot resolve or revoke the current record
+  ---
+  duration_ms: 1.8425
+  type: 'test'
+  ...
+# Subtest: store snapshots grant values; later caller mutation cannot replace tokens, scope or expiry
+ok 57 - store snapshots grant values; later caller mutation cannot replace tokens, scope or expiry
+  ---
+  duration_ms: 0.4685
+  type: 'test'
+  ...
+# Subtest: valid store atomically replaces the active handle and invalid replacement fails closed
+ok 58 - valid store atomically replaces the active handle and invalid replacement fails closed
+  ---
+  duration_ms: 0.8486
+  type: 'test'
+  ...
+# Subtest: grant exact own fields reject getters, cycles, symbols, unknown keys and inherited objects
+ok 59 - grant exact own fields reject getters, cycles, symbols, unknown keys and inherited objects
+  ---
+  duration_ms: 5.0996
+  type: 'test'
+  ...
+# Subtest: local exact read-scope policy rejects extra, duplicated, malformed and accessor array entries
+ok 60 - local exact read-scope policy rejects extra, duplicated, malformed and accessor array entries
+  ---
+  duration_ms: 12.6803
+  type: 'test'
+  ...
+# Subtest: both token values have strict printable ASCII and 4096-character limits
+ok 61 - both token values have strict printable ASCII and 4096-character limits
+  ---
+  duration_ms: 5.5601
+  type: 'test'
+  ...
+# Subtest: expiry seconds must be positive safe integers and derived deadline must not overflow
+ok 62 - expiry seconds must be positive safe integers and derived deadline must not overflow
+  ---
+  duration_ms: 1.5049
+  type: 'test'
+  ...
+# Subtest: expiry occurs at the exact deadline and observed expiry cannot be revived by clock rollback
+ok 63 - expiry occurs at the exact deadline and observed expiry cannot be revived by clock rollback
+  ---
+  duration_ms: 15.201
+  type: 'test'
+  ...
+# Subtest: a broken clock fails closed with a fixed error rather than retaining usable credentials
+ok 64 - a broken clock fails closed with a fixed error rather than retaining usable credentials
+  ---
+  duration_ms: 0.6945
+  type: 'test'
+  ...
+# Subtest: refresh has one outstanding exchange, a private signal, and blocks access resolution while pending
+ok 65 - refresh has one outstanding exchange, a private signal, and blocks access resolution while pending
+  ---
+  duration_ms: 4.1846
+  type: 'test'
+  ...
+# Subtest: successful refresh rotates both tokens into a new identity and permanently retires the old handle
+ok 66 - successful refresh rotates both tokens into a new identity and permanently retires the old handle
+  ---
+  duration_ms: 1.0943
+  type: 'test'
+  ...
+# Subtest: refresh with a forged or foreign handle never runs exchange or disturbs current authority
+ok 67 - refresh with a forged or foreign handle never runs exchange or disturbs current authority
+  ---
+  duration_ms: 0.7111
+  type: 'test'
+  ...
+# Subtest: exchange synchronous exceptions and rejected promises fail closed without raw cause/error text
+ok 68 - exchange synchronous exceptions and rejected promises fail closed without raw cause/error text
+  ---
+  duration_ms: 0.9549
+  type: 'test'
+  ...
+# Subtest: malformed refresh grants fail closed and never echo unexpected callback data
+ok 69 - malformed refresh grants fail closed and never echo unexpected callback data
+  ---
+  duration_ms: 1.4149
+  type: 'test'
+  ...
+# Subtest: refresh options are exact own data and malformed descriptors never execute exchange getters
+ok 70 - refresh options are exact own data and malformed descriptors never execute exchange getters
+  ---
+  duration_ms: 2.2769
+  type: 'test'
+  ...
+# Subtest: hanging exchange times out even when it ignores abort; late grant cannot revive the retired record
+ok 71 - hanging exchange times out even when it ignores abort; late grant cannot revive the retired record
+  ---
+  duration_ms: 5.7697
+  type: 'test'
+  ...
+# Subtest: external abort settles an ignoring exchange immediately and suppresses its raw reason
+ok 72 - external abort settles an ignoring exchange immediately and suppresses its raw reason
+  ---
+  duration_ms: 1.8002
+  type: 'test'
+  ...
+# Subtest: pre-aborted refresh never invokes the exchange callback
+ok 73 - pre-aborted refresh never invokes the exchange callback
+  ---
+  duration_ms: 0.9016
+  type: 'test'
+  ...
+# Subtest: revoke immediately aborts/settles pending refresh; its late result cannot override a later store
+ok 74 - revoke immediately aborts/settles pending refresh; its late result cannot override a later store
+  ---
+  duration_ms: 2.3429
+  type: 'test'
+  ...
+# Subtest: stop settles pending refresh and permanently refuses future store/resolve/refresh
+ok 75 - stop settles pending refresh and permanently refuses future store/resolve/refresh
+  ---
+  duration_ms: 1.4813
+  type: 'test'
+  ...
+# Subtest: store replacement cancels pending exchange and ignores late completion without nulling its new record
+ok 76 - store replacement cancels pending exchange and ignores late completion without nulling its new record
+  ---
+  duration_ms: 4.2387
+  type: 'test'
+  ...
+# Subtest: invalid store replacement also cancels pending exchange fail-closed
+ok 77 - invalid store replacement also cancels pending exchange fail-closed
+  ---
+  duration_ms: 1.2504
+  type: 'test'
+  ...
+# Subtest: old canceled timer/completion cannot terminate or erase a newer pending refresh
+ok 78 - old canceled timer/completion cannot terminate or erase a newer pending refresh
+  ---
+  duration_ms: 1.2481
+  type: 'test'
+  ...
+# Subtest: old credential expiry bounds a pending refresh earlier than its I/O timeout
+ok 79 - old credential expiry bounds a pending refresh earlier than its I/O timeout
+  ---
+  duration_ms: 1.2101
+  type: 'test'
+  ...
+# Subtest: hostile thenable errors are sanitized and retired handles expose no retained token through descriptors
+ok 80 - hostile thenable errors are sanitized and retired handles expose no retained token through descriptors
+  ---
+  duration_ms: 0.7761
+  type: 'test'
+  ...
+# Subtest: default referenced timer settles an ignored hanging refresh in a standalone process
+ok 81 - default referenced timer settles an ignored hanging refresh in a standalone process
+  ---
+  duration_ms: 963.7773
+  type: 'test'
+  ...
+# Subtest: vault resolves only the current handle for actual HTTP adapter with fake fetch and no live authorization
+ok 82 - vault resolves only the current handle for actual HTTP adapter with fake fetch and no live authorization
+  ---
+  duration_ms: 3.5629
+  type: 'test'
+  ...
+# Subtest: factory requires explicit fetch, validates exact configuration and exposes only two frozen ports
+ok 83 - factory requires explicit fetch, validates exact configuration and exposes only two frozen ports
+  ---
+  duration_ms: 21.6075
+  type: 'test'
+  ...
+# Subtest: fixed POST URLs and exact headers/options encode reserved device code once in form body
+ok 84 - fixed POST URLs and exact headers/options encode reserved device code once in form body
+  ---
+  duration_ms: 5.1546
+  type: 'test'
+  ...
+# Subtest: every device request pin and unknown field is rejected before fetch
+ok 85 - every device request pin and unknown field is rejected before fetch
+  ---
+  duration_ms: 3.1051
+  type: 'test'
+  ...
+# Subtest: poll rejects refresh routes, wrong grant type/scope/client and unsafe device codes before fetch
+ok 86 - poll rejects refresh routes, wrong grant type/scope/client and unsafe device codes before fetch
+  ---
+  duration_ms: 2.6417
+  type: 'test'
+  ...
+# Subtest: options and request own-data checks reject accessors, symbols and cycles without invoking getters
+ok 87 - options and request own-data checks reject accessors, symbols and cycles without invoking getters
+  ---
+  duration_ms: 2.7746
+  type: 'test'
+  ...
+# Subtest: request snapshot survives timer-hook mutation and abort reentry prevents fetch admission
+ok 88 - request snapshot survives timer-hook mutation and abort reentry prevents fetch admission
+  ---
+  duration_ms: 1.6582
+  type: 'test'
+  ...
+# Subtest: device success receipt is a frozen strict projection with optional interval preserved
+ok 89 - device success receipt is a frozen strict projection with optional interval preserved
+  ---
+  duration_ms: 0.9592
+  type: 'test'
+  ...
+# Subtest: token success preserves private values, canonicalizes bearer and supports four-hour access lifetime
+ok 90 - token success preserves private values, canonicalizes bearer and supports four-hour access lifetime
+  ---
+  duration_ms: 0.7865
+  type: 'test'
+  ...
+# Subtest: malformed device success fields and URI pins cannot be repaired or exposed through raw exceptions
+ok 91 - malformed device success fields and URI pins cannot be repaired or exposed through raw exceptions
+  ---
+  duration_ms: 4.5894
+  type: 'test'
+  ...
+# Subtest: token projection rejects missing refresh, wrong/extra read scope and unsafe expiry without pin repair
+ok 92 - token projection rejects missing refresh, wrong/extra read scope and unsafe expiry without pin repair
+  ---
+  duration_ms: 7.4797
+  type: 'test'
+  ...
+# Subtest: known RFC400 errors discard diagnostic descriptions/URIs and never follow them
+ok 93 - known RFC400 errors discard diagnostic descriptions/URIs and never follow them
+  ---
+  duration_ms: 18.3498
+  type: 'test'
+  ...
+# Subtest: only exact Twitch pending/invalid-device messages survive; unknown400 content is redacted
+ok 94 - only exact Twitch pending/invalid-device messages survive; unknown400 content is redacted
+  ---
+  duration_ms: 3.1355
+  type: 'test'
+  ...
+# Subtest: device non200 and poll non200/non400 return empty body without reading service text
+ok 95 - device non200 and poll non200/non400 return empty body without reading service text
+  ---
+  duration_ms: 1.4527
+  type: 'test'
+  ...
+# Subtest: exactly64KiB valid JSON whitespace is accepted and plusone byte is rejected before projection
+ok 96 - exactly64KiB valid JSON whitespace is accepted and plusone byte is rejected before projection
+  ---
+  duration_ms: 1.8489
+  type: 'test'
+  ...
+# Subtest: byte cap is cumulative and counts UTF8 bytes rather than JavaScript characters
+ok 97 - byte cap is cumulative and counts UTF8 bytes rather than JavaScript characters
+  ---
+  duration_ms: 3.6271
+  type: 'test'
+  ...
+# Subtest: streaming UTF8 handles split multibyte text while malformed/truncated bytes fail fatally
+ok 98 - streaming UTF8 handles split multibyte text while malformed/truncated bytes fail fatally
+  ---
+  duration_ms: 3.0532
+  type: 'test'
+  ...
+# Subtest: invalid JSON and malformed response/reader values produce fixed errors without unbounded fallback
+ok 99 - invalid JSON and malformed response/reader values produce fixed errors without unbounded fallback
+  ---
+  duration_ms: 2.9326
+  type: 'test'
+  ...
+# Subtest: finite reader fragment bound stops an infinite stream of empty chunks
+ok 100 - finite reader fragment bound stops an infinite stream of empty chunks
+  ---
+  duration_ms: 3829.0427
+  type: 'test'
+  ...
+# Subtest: request and pre-aborted native signal validation happen before fetch and never echo abort reason
+ok 101 - request and pre-aborted native signal validation happen before fetch and never echo abort reason
+  ---
+  duration_ms: 0.9736
+  type: 'test'
+  ...
+# Subtest: hanging fetch timeout settles without abort cooperation and a late response is cancelled once
+ok 102 - hanging fetch timeout settles without abort cooperation and a late response is cancelled once
+  ---
+  duration_ms: 14.5835
+  type: 'test'
+  ...
+# Subtest: shared timeout includes hanging body read; hostile cleanup cannot delay rejection
+ok 103 - shared timeout includes hanging body read; hostile cleanup cannot delay rejection
+  ---
+  duration_ms: 134.8128
+  type: 'test'
+  ...
+# Subtest: external abort during body decode is terminal even when read/cancel ignore or reject
+ok 104 - external abort during body decode is terminal even when read/cancel ignore or reject
+  ---
+  duration_ms: 2.6562
+  type: 'test'
+  ...
+# Subtest: response/read/cleanup exceptions cannot expose raw canaries or cause chains
+ok 105 - response/read/cleanup exceptions cannot expose raw canaries or cause chains
+  ---
+  duration_ms: 1.7755
+  type: 'test'
+  ...
+# Subtest: native promise observation and boxed raw responses/chunks do not invoke hostile then getters
+ok 106 - native promise observation and boxed raw responses/chunks do not invoke hostile then getters
+  ---
+  duration_ms: 1.7175
+  type: 'test'
+  ...
+# Subtest: late response without body.cancel uses nonblocking reader cancellation and releases its lock
+ok 107 - late response without body.cancel uses nonblocking reader cancellation and releases its lock
+  ---
+  duration_ms: 1.7499
+  type: 'test'
+  ...
+# Subtest: actual HTTP adapter plus device harness performs private pending/slowdown/grant with fake fetch only
+ok 108 - actual HTTP adapter plus device harness performs private pending/slowdown/grant with fake fetch only
+  ---
+  duration_ms: 8.6576
+  type: 'test'
+  ...
+# Subtest: default referenced timer settles standalone hanging HTTP fetch instead of early process exit
+ok 109 - default referenced timer settles standalone hanging HTTP fetch instead of early process exit
+  ---
+  duration_ms: 208.7341
+  type: 'test'
+  ...
+# Subtest: factory is inert and exposes only frozen lifecycle controls with false authenticity flags
+ok 110 - factory is inert and exposes only frozen lifecycle controls with false authenticity flags
+  ---
+  duration_ms: 5.9964
+  type: 'test'
+  ...
+# Subtest: constructor requires explicit adapters/callbacks and rejects malformed descriptors without invoking them
+ok 111 - constructor requires explicit adapters/callbacks and rejects malformed descriptors without invoking them
+  ---
+  duration_ms: 1.8452
+  type: 'test'
+  ...
+# Subtest: fixed POST proposals are frozen and use plural scopes without client-secret or real transport
+ok 112 - fixed POST proposals are frozen and use plural scopes without client-secret or real transport
+  ---
+  duration_ms: 17.259
+  type: 'test'
+  ...
+# Subtest: private prompt and vault-compatible grant callbacks are frozen and remain absent from public state
+ok 113 - private prompt and vault-compatible grant callbacks are frozen and remain absent from public state
+  ---
+  duration_ms: 4.0814
+  type: 'test'
+  ...
+# Subtest: missing interval defaults to five seconds and the first poll never runs early
+ok 114 - missing interval defaults to five seconds and the first poll never runs early
+  ---
+  duration_ms: 2.6186
+  type: 'test'
+  ...
+# Subtest: first poll interval starts after prompt completion while device expiry remains anchored to request start
+ok 115 - first poll interval starts after prompt completion while device expiry remains anchored to request start
+  ---
+  duration_ms: 2.7384
+  type: 'test'
+  ...
+# Subtest: Twitch pending and RFC pending retain interval, slow_down adds five seconds permanently
+ok 116 - Twitch pending and RFC pending retain interval, slow_down adds five seconds permanently
+  ---
+  duration_ms: 3.2812
+  type: 'test'
+  ...
+# Subtest: polls are serial and a pending response schedules from its completion time
+ok 117 - polls are serial and a pending response schedules from its completion time
+  ---
+  duration_ms: 2.4421
+  type: 'test'
+  ...
+# Subtest: request latency cannot extend conservative expiry and expiry preempts the first poll exactly
+ok 118 - request latency cannot extend conservative expiry and expiry preempts the first poll exactly
+  ---
+  duration_ms: 4.1451
+  type: 'test'
+  ...
+# Subtest: a device response received at the original expiry never invokes prompt or poll
+ok 119 - a device response received at the original expiry never invokes prompt or poll
+  ---
+  duration_ms: 2.002
+  type: 'test'
+  ...
+# Subtest: pending token response cannot extend device lifetime or admit a late success
+ok 120 - pending token response cannot extend device lifetime or admit a late success
+  ---
+  duration_ms: 11.8245
+  type: 'test'
+  ...
+# Subtest: only exact activation authority/path and allowed unique matching query keys are accepted
+ok 121 - only exact activation authority/path and allowed unique matching query keys are accepted
+  ---
+  duration_ms: 46.0996
+  type: 'test'
+  ...
+# Subtest: device receipt schema rejects unknown fields, accessors, cycles, unsafe codes and numeric bounds
+ok 122 - device receipt schema rejects unknown fields, accessors, cycles, unsafe codes and numeric bounds
+  ---
+  duration_ms: 45.4142
+  type: 'test'
+  ...
+# Subtest: token type accepts bearer case-insensitively but local grant policy requires refresh and exact read scope
+ok 123 - token type accepts bearer case-insensitively but local grant policy requires refresh and exact read scope
+  ---
+  duration_ms: 29.9498
+  type: 'test'
+  ...
+# Subtest: token receipt accessors and cycles are rejected without raw error/canary reflection
+ok 124 - token receipt accessors and cycles are rejected without raw error/canary reflection
+  ---
+  duration_ms: 2.3915
+  type: 'test'
+  ...
+# Subtest: only pending/slowdown continue; denial, expired device, invalid code and unknown errors are terminal
+ok 125 - only pending/slowdown continue; denial, expired device, invalid code and unknown errors are terminal
+  ---
+  duration_ms: 6.5713
+  type: 'test'
+  ...
+# Subtest: bounded OAuth description/URI fields are discarded and never visited or exposed
+ok 126 - bounded OAuth description/URI fields are discarded and never visited or exposed
+  ---
+  duration_ms: 1.8888
+  type: 'test'
+  ...
+# Subtest: a concurrent start is busy and does not restart the active deadline or first poll
+ok 127 - a concurrent start is busy and does not restart the active deadline or first poll
+  ---
+  duration_ms: 1.8398
+  type: 'test'
+  ...
+# Subtest: cancel settles a hanging device request, permits restart, and ignores its late response
+ok 128 - cancel settles a hanging device request, permits restart, and ignores its late response
+  ---
+  duration_ms: 1.7071
+  type: 'test'
+  ...
+# Subtest: cancel during polling and a stale timer cannot corrupt the next generation
+ok 129 - cancel during polling and a stale timer cannot corrupt the next generation
+  ---
+  duration_ms: 2.1202
+  type: 'test'
+  ...
+# Subtest: stop is terminal/idempotent and ignores delayed device completion without showing a prompt
+ok 130 - stop is terminal/idempotent and ignores delayed device completion without showing a prompt
+  ---
+  duration_ms: 1.2959
+  type: 'test'
+  ...
+# Subtest: native external pre-abort/malformed signal never starts device work; later abort clears wait timers
+ok 131 - native external pre-abort/malformed signal never starts device work; later abort clears wait timers
+  ---
+  duration_ms: 2.2617
+  type: 'test'
+  ...
+# Subtest: device and poll exceptions are terminal without retry or raw cause/error reflection
+ok 132 - device and poll exceptions are terminal without retry or raw cause/error reflection
+  ---
+  duration_ms: 2.0531
+  type: 'test'
+  ...
+# Subtest: device and poll I/O timeouts settle even when dependencies ignore abort and late values cannot deliver
+ok 133 - device and poll I/O timeouts settle even when dependencies ignore abort and late values cannot deliver
+  ---
+  duration_ms: 4.4088
+  type: 'test'
+  ...
+# Subtest: private prompt/grant callback waits are bounded and late completion does not rewrite terminal result
+ok 134 - private prompt/grant callback waits are bounded and late completion does not rewrite terminal result
+  ---
+  duration_ms: 2.6898
+  type: 'test'
+  ...
+# Subtest: prompt/grant callback exceptions remain private and cannot claim successful delivery
+ok 135 - prompt/grant callback exceptions remain private and cannot claim successful delivery
+  ---
+  duration_ms: 1.6665
+  type: 'test'
+  ...
+# Subtest: callback reentry cannot duplicate a run; cancel/restart and terminal stop keep generation ownership
+ok 136 - callback reentry cannot duplicate a run; cancel/restart and terminal stop keep generation ownership
+  ---
+  duration_ms: 2.3755
+  type: 'test'
+  ...
+# Subtest: receipt descriptor reentry into cancel/stop cannot start late polls or deliver a stale grant
+ok 137 - receipt descriptor reentry into cancel/stop cannot start late polls or deliver a stale grant
+  ---
+  duration_ms: 4.3964
+  type: 'test'
+  ...
+# Subtest: clock rollback during an active attempt fails closed and snapshots remain immutable
+ok 138 - clock rollback during an active attempt fails closed and snapshots remain immutable
+  ---
+  duration_ms: 1.2713
+  type: 'test'
+  ...
+# Subtest: default referenced I/O deadline settles a standalone hanging adapter without early process exit
+ok 139 - default referenced I/O deadline settles a standalone hanging adapter without early process exit
+  ---
+  duration_ms: 954.0846
+  type: 'test'
+  ...
+# Subtest: constructor is inert and frozen facade exposes controls and independent simulation without raw grant or event ingress
+ok 140 - constructor is inert and frozen facade exposes controls and independent simulation without raw grant or event ingress
+  ---
+  duration_ms: 11.6014
+  type: 'test'
+  ...
+# Subtest: constructor requires pinned own-channel explicit dependencies and rejects unknown/accessor configuration
+ok 141 - constructor requires pinned own-channel explicit dependencies and rejects unknown/accessor configuration
+  ---
+  duration_ms: 3.0232
+  type: 'test'
+  ...
+# Subtest: malformed start options and pre-aborted native signal cannot begin HTTP or invoke descriptor getters
+ok 142 - malformed start options and pre-aborted native signal cannot begin HTTP or invoke descriptor getters
+  ---
+  duration_ms: 6.6375
+  type: 'test'
+  ...
+# Subtest: actual four-route device-to-staged composition acquires privately then requires welcome202 and delivered chat before tally
+ok 143 - actual four-route device-to-staged composition acquires privately then requires welcome202 and delivered chat before tally
+  ---
+  duration_ms: 73.5322
+  type: 'test'
+  ...
+# Subtest: concurrent and active starts are busy without duplicate prompts, HTTP, exchange or round mutation
+ok 144 - concurrent and active starts are busy without duplicate prompts, HTTP, exchange or round mutation
+  ---
+  duration_ms: 17.0617
+  type: 'test'
+  ...
+# Subtest: pending and slow_down keep acquisition private until a grant while prompt lifetime ends on handoff
+ok 145 - pending and slow_down keep acquisition private until a grant while prompt lifetime ends on handoff
+  ---
+  duration_ms: 8.6577
+  type: 'test'
+  ...
+# Subtest: cancel bounds device, prompt, poll, validation and connect waits; late results cannot corrupt an explicit replacement
+ok 146 - cancel bounds device, prompt, poll, validation and connect waits; late results cannot corrupt an explicit replacement
+  ---
+  duration_ms: 41.466
+  type: 'test'
+  ...
+# Subtest: active cancel preserves votes and replay while clearing source cue and rejecting old callbacks before cache intake
+ok 147 - active cancel preserves votes and replay while clearing source cue and rejecting old callbacks before cache intake
+  ---
+  duration_ms: 41.2538
+  type: 'test'
+  ...
+# Subtest: original start signal remains owner authority after acquisition and through an ignored refresh exchange
+ok 148 - original start signal remains owner authority after acquisition and through an ignored refresh exchange
+  ---
+  duration_ms: 52.6099
+  type: 'test'
+  ...
+# Subtest: wrong validation client, reader, scope or401 cannot create a socket or staged vote
+ok 149 - wrong validation client, reader, scope or401 cannot create a socket or staged vote
+  ---
+  duration_ms: 24.1714
+  type: 'test'
+  ...
+# Subtest: invalid device/token responses and authorization denial cannot reach validation or expose private service bodies
+ok 150 - invalid device/token responses and authorization denial cannot reach validation or expose private service bodies
+  ---
+  duration_ms: 8.0028
+  type: 'test'
+  ...
+# Subtest: prompt rejection, hook timeout and original device expiry abort private prompt lifetime and settle acquisition
+ok 151 - prompt rejection, hook timeout and original device expiry abort private prompt lifetime and settle acquisition
+  ---
+  duration_ms: 7.1937
+  type: 'test'
+  ...
+# Subtest: grant handoff I/O timeout retires ignored validation or connect and cannot revive from a late result
+ok 152 - grant handoff I/O timeout retires ignored validation or connect and cannot revive from a late result
+  ---
+  duration_ms: 16.5855
+  type: 'test'
+  ...
+# Subtest: original device deadline bounds a grant handoff even when validation ignores abort and advertises longer lifetime
+ok 153 - original device deadline bounds a grant handoff even when validation ignores abort and advertises longer lifetime
+  ---
+  duration_ms: 4.4997
+  type: 'test'
+  ...
+# Subtest: HTTP body waits stay bounded at device, poll, validation and subscription without secret-bearing failures
+ok 154 - HTTP body waits stay bounded at device, poll, validation and subscription without secret-bearing failures
+  ---
+  duration_ms: 14.7849
+  type: 'test'
+  ...
+# Subtest: refresh retires old socket before exchange, validates new private token and preserves vote window/tally/replay
+ok 155 - refresh retires old socket before exchange, validates new private token and preserves vote window/tally/replay
+  ---
+  duration_ms: 26.4774
+  type: 'test'
+  ...
+# Subtest: failed fresh validation or invalid exchange grants cannot open replacement sockets or revive old intake
+ok 156 - failed fresh validation or invalid exchange grants cannot open replacement sockets or revive old intake
+  ---
+  duration_ms: 27.5113
+  type: 'test'
+  ...
+# Subtest: refresh is single-flight and operation abort settles ignored exchange without leaking its reason
+ok 157 - refresh is single-flight and operation abort settles ignored exchange without leaking its reason
+  ---
+  duration_ms: 9.5537
+  type: 'test'
+  ...
+# Subtest: cancel or terminal stop settles ignored refresh and its late grant cannot overwrite replacement ownership
+ok 158 - cancel or terminal stop settles ignored refresh and its late grant cannot overwrite replacement ownership
+  ---
+  duration_ms: 14.5082
+  type: 'test'
+  ...
+# Subtest: reset clears round and cue while preserving replay and requiring a new explicit acquisition
+ok 159 - reset clears round and cue while preserving replay and requiring a new explicit acquisition
+  ---
+  duration_ms: 36.8894
+  type: 'test'
+  ...
+# Subtest: exact staged lease expiry retires owner intake without renewing the old scope or changing the vote window
+ok 160 - exact staged lease expiry retires owner intake without renewing the old scope or changing the vote window
+  ---
+  duration_ms: 30.9482
+  type: 'test'
+  ...
+# Subtest: transport disconnect, revocation and keepalive timeout retire owned intake and clear source cue
+ok 161 - transport disconnect, revocation and keepalive timeout retire owned intake and clear source cue
+  ---
+  duration_ms: 72.492
+  type: 'test'
+  ...
+# Subtest: teardown reentry from lifetime abort, socket close and exchange abort cannot start work or mutate a replacement
+ok 162 - teardown reentry from lifetime abort, socket close and exchange abort cannot start work or mutate a replacement
+  ---
+  duration_ms: 14.9603
+  type: 'test'
+  ...
+# Subtest: async connection cleanup never delays cancel or stop and cleanup rejections cannot escape private ownership
+ok 163 - async connection cleanup never delays cancel or stop and cleanup rejections cannot escape private ownership
+  ---
+  duration_ms: 18.6085
+  type: 'test'
+  ...
+# Subtest: simulation and staged caches remain independent, and transported original timestamps are not rewritten
+ok 164 - simulation and staged caches remain independent, and transported original timestamps are not rewritten
+  ---
+  duration_ms: 12.7858
+  type: 'test'
+  ...
+# Subtest: parser accepts complete, case-insensitive commands and ordinary chat is ignored
+ok 165 - parser accepts complete, case-insensitive commands and ordinary chat is ignored
+  ---
+  duration_ms: 3.3033
+  type: 'test'
+  ...
+# Subtest: parser rejects ambiguous choices, trailing arguments, unsupported commands and oversized input
+ok 166 - parser rejects ambiguous choices, trailing arguments, unsupported commands and oversized input
+  ---
+  duration_ms: 0.6943
+  type: 'test'
+  ...
+# Subtest: new board is explicitly simulated and a connection change never claims Twitch access
+ok 167 - new board is explicitly simulated and a connection change never claims Twitch access
+  ---
+  duration_ms: 2.0331
+  type: 'test'
+  ...
+# Subtest: source and help remain available while disconnected and before a vote opens
+ok 168 - source and help remain available while disconnected and before a vote opens
+  ---
+  duration_ms: 11.3878
+  type: 'test'
+  ...
+# Subtest: votes require an open window and an established simulated connection
+ok 169 - votes require an open window and an established simulated connection
+  ---
+  duration_ms: 1.6726
+  type: 'test'
+  ...
+# Subtest: one viewer contributes one vote, can change choice, and repeats do not inflate totals
+ok 170 - one viewer contributes one vote, can change choice, and repeats do not inflate totals
+  ---
+  duration_ms: 2.816
+  type: 'test'
+  ...
+# Subtest: duplicate event IDs cannot change viewer or choice to count twice
+ok 171 - duplicate event IDs cannot change viewer or choice to count twice
+  ---
+  duration_ms: 0.6423
+  type: 'test'
+  ...
+# Subtest: rejected disconnected events stay rejected when replayed after reconnect
+ok 172 - rejected disconnected events stay rejected when replayed after reconnect
+  ---
+  duration_ms: 0.4512
+  type: 'test'
+  ...
+# Subtest: malformed events, missing identities, oversized text and unsafe timestamps never count
+ok 173 - malformed events, missing identities, oversized text and unsafe timestamps never count
+  ---
+  duration_ms: 1.1268
+  type: 'test'
+  ...
+# Subtest: untrusted Twitch origin cannot be used to present simulated input as platform integration
+ok 174 - untrusted Twitch origin cannot be used to present simulated input as platform integration
+  ---
+  duration_ms: 0.8588
+  type: 'test'
+  ...
+# Subtest: invalid commands and arbitrary chat do not mutate vote totals or execute input
+ok 175 - invalid commands and arbitrary chat do not mutate vote totals or execute input
+  ---
+  duration_ms: 0.7504
+  type: 'test'
+  ...
+# Subtest: window admits a vote immediately before deadline and rejects at the exact deadline
+ok 176 - window admits a vote immediately before deadline and rejects at the exact deadline
+  ---
+  duration_ms: 0.6143
+  type: 'test'
+  ...
+# Subtest: reading overlay state expires a round even if no further chat arrives
+ok 177 - reading overlay state expires a round even if no further chat arrives
+  ---
+  duration_ms: 0.3856
+  type: 'test'
+  ...
+# Subtest: disconnect does not pause the window or admit queued votes after its deadline
+ok 178 - disconnect does not pause the window or admit queued votes after its deadline
+  ---
+  duration_ms: 0.5309
+  type: 'test'
+  ...
+# Subtest: events stamped outside current round are rejected even during its open window
+ok 179 - events stamped outside current round are rejected even during its open window
+  ---
+  duration_ms: 0.4417
+  type: 'test'
+  ...
+# Subtest: manual close freezes totals and reopening creates a new round while retaining replay protection
+ok 180 - manual close freezes totals and reopening creates a new round while retaining replay protection
+  ---
+  duration_ms: 0.6995
+  type: 'test'
+  ...
+# Subtest: reset removes round totals but does not permit replay of an already accepted event
+ok 181 - reset removes round totals but does not permit replay of an already accepted event
+  ---
+  duration_ms: 0.6666
+  type: 'test'
+  ...
+# Subtest: invalid duration, status and attempts to open an existing window preserve active round
+ok 182 - invalid duration, status and attempts to open an existing window preserve active round
+  ---
+  duration_ms: 1.4641
+  type: 'test'
+  ...
+# Subtest: dedupe TTL has an explicit boundary and replay after expiration is still one vote per viewer
+ok 183 - dedupe TTL has an explicit boundary and replay after expiration is still one vote per viewer
+  ---
+  duration_ms: 0.5507
+  type: 'test'
+  ...
+# Subtest: bounded dedupe cache evicts old IDs and preserves unique-voter rules
+ok 184 - bounded dedupe cache evicts old IDs and preserves unique-voter rules
+  ---
+  duration_ms: 0.55
+  type: 'test'
+  ...
+# Subtest: expired dedupe entries cannot revive a previous-round timestamp
+ok 185 - expired dedupe entries cannot revive a previous-round timestamp
+  ---
+  duration_ms: 0.5244
+  type: 'test'
+  ...
+# Subtest: snapshots and constructor inputs cannot mutate private card or counts
+ok 186 - snapshots and constructor inputs cannot mutate private card or counts
+  ---
+  duration_ms: 1.3492
+  type: 'test'
+  ...
+# Subtest: public state never contains individual event IDs, viewer IDs or raw messages
+ok 187 - public state never contains individual event IDs, viewer IDs or raw messages
+  ---
+  duration_ms: 0.6442
+  type: 'test'
+  ...
+# Subtest: card construction requires two choices and a bounded credential-free HTTPS source
+ok 188 - card construction requires two choices and a bounded credential-free HTTPS source
+  ---
+  duration_ms: 0.7356
+  type: 'test'
+  ...
+# Subtest: invalid clocks and resource limits fail before a board is handed out
+ok 189 - invalid clocks and resource limits fail before a board is handed out
+  ---
+  duration_ms: 0.8146
+  type: 'test'
+  ...
+# Subtest: many deterministic interleaved viewer changes preserve tally invariants
+ok 190 - many deterministic interleaved viewer changes preserve tally invariants
+  ---
+  duration_ms: 67.5082
+  type: 'test'
+  ...
+# Subtest: initial and ready snapshots remain labelled offline protocol rehearsal
+ok 191 - initial and ready snapshots remain labelled offline protocol rehearsal
+  ---
+  duration_ms: 31.5833
+  type: 'test'
+  ...
+# Subtest: notifications and keepalives before welcome cannot initialize an authenticated-looking session
+ok 192 - notifications and keepalives before welcome cannot initialize an authenticated-looking session
+  ---
+  duration_ms: 20.0478
+  type: 'test'
+  ...
+# Subtest: a valid synthetic notification maps chat identity rather than delivery identity
+ok 193 - a valid synthetic notification maps chat identity rather than delivery identity
+  ---
+  duration_ms: 9.4351
+  type: 'test'
+  ...
+# Subtest: normalized protocol rehearsal events cannot enter the simulation vote engine
+ok 194 - normalized protocol rehearsal events cannot enter the simulation vote engine
+  ---
+  duration_ms: 4.1651
+  type: 'test'
+  ...
+# Subtest: malformed JSON, nonobjects, nonstrings, absent metadata and oversized frames are rejected
+ok 195 - malformed JSON, nonobjects, nonstrings, absent metadata and oversized frames are rejected
+  ---
+  duration_ms: 0.9585
+  type: 'test'
+  ...
+# Subtest: welcome requires a session identity, connected status and positive bounded keepalive
+ok 196 - welcome requires a session identity, connected status and positive bounded keepalive
+  ---
+  duration_ms: 1.6775
+  type: 'test'
+  ...
+# Subtest: a second welcome cannot replace an already ready session
+ok 197 - a second welcome cannot replace an already ready session
+  ---
+  duration_ms: 3.0471
+  type: 'test'
+  ...
+# Subtest: metadata must identify the pinned notification type/version and have a delivery ID
+ok 198 - metadata must identify the pinned notification type/version and have a delivery ID
+  ---
+  duration_ms: 1.818
+  type: 'test'
+  ...
+# Subtest: subscription ID/type/version/status, conditions and transport must match pinned session
+ok 199 - subscription ID/type/version/status, conditions and transport must match pinned session
+  ---
+  duration_ms: 2.6007
+  type: 'test'
+  ...
+# Subtest: notification requires the target broadcaster, numeric chatter identity and chat message ID
+ok 200 - notification requires the target broadcaster, numeric chatter identity and chat message ID
+  ---
+  duration_ms: 1.9342
+  type: 'test'
+  ...
+# Subtest: cross-channel Shared Chat is rejected under the conservative local policy
+ok 201 - cross-channel Shared Chat is rejected under the conservative local policy
+  ---
+  duration_ms: 0.4945
+  type: 'test'
+  ...
+# Subtest: a local-source or null-source Shared Chat field does not change the target channel
+ok 202 - a local-source or null-source Shared Chat field does not change the target channel
+  ---
+  duration_ms: 0.5272
+  type: 'test'
+  ...
+# Subtest: the local board text boundary accepts 300 characters and rejects longer/nontext content
+ok 203 - the local board text boundary accepts 300 characters and rejects longer/nontext content
+  ---
+  duration_ms: 0.7357
+  type: 'test'
+  ...
+# Subtest: RFC3339 nanosecond precision is preserved as an explicit millisecond normalization
+ok 204 - RFC3339 nanosecond precision is preserved as an explicit millisecond normalization
+  ---
+  duration_ms: 0.3285
+  type: 'test'
+  ...
+# Subtest: RFC3339 timezone offsets normalize to the same instant
+ok 205 - RFC3339 timezone offsets normalize to the same instant
+  ---
+  duration_ms: 0.3658
+  type: 'test'
+  ...
+# Subtest: invalid calendar dates and non-RFC3339 timestamp shapes are rejected
+ok 206 - invalid calendar dates and non-RFC3339 timestamp shapes are rejected
+  ---
+  duration_ms: 0.8782
+  type: 'test'
+  ...
+# Subtest: message-age and future clock-skew boundaries are enforced
+ok 207 - message-age and future clock-skew boundaries are enforced
+  ---
+  duration_ms: 0.5822
+  type: 'test'
+  ...
+# Subtest: nanosecond timestamp boundaries are checked before millisecond normalization
+ok 208 - nanosecond timestamp boundaries are checked before millisecond normalization
+  ---
+  duration_ms: 0.3192
+  type: 'test'
+  ...
+# Subtest: delivery-ID duplicates and same-chat-ID redeliveries each produce no second chat event
+ok 209 - delivery-ID duplicates and same-chat-ID redeliveries each produce no second chat event
+  ---
+  duration_ms: 0.527
+  type: 'test'
+  ...
+# Subtest: valid duplicate delivery refreshes liveness using receive time rather than its old timestamp
+ok 210 - valid duplicate delivery refreshes liveness using receive time rather than its old timestamp
+  ---
+  duration_ms: 0.4689
+  type: 'test'
+  ...
+# Subtest: valid same-chat redelivery refreshes liveness without emitting another normalized event
+ok 211 - valid same-chat redelivery refreshes liveness without emitting another normalized event
+  ---
+  duration_ms: 0.3763
+  type: 'test'
+  ...
+# Subtest: a malformed replay with a valid delivery ID cannot refresh liveness
+ok 212 - a malformed replay with a valid delivery ID cannot refresh liveness
+  ---
+  duration_ms: 0.4386
+  type: 'test'
+  ...
+# Subtest: watchdog keeps the exact deadline valid and becomes terminal strictly after it
+ok 213 - watchdog keeps the exact deadline valid and becomes terminal strictly after it
+  ---
+  duration_ms: 0.4268
+  type: 'test'
+  ...
+# Subtest: valid keepalive refreshes deadline and is counted without a chat event
+ok 214 - valid keepalive refreshes deadline and is counted without a chat event
+  ---
+  duration_ms: 0.4274
+  type: 'test'
+  ...
+# Subtest: unknown message types and invalid keepalive payloads do not extend the watchdog
+ok 215 - unknown message types and invalid keepalive payloads do not extend the watchdog
+  ---
+  duration_ms: 0.4689
+  type: 'test'
+  ...
+# Subtest: dedupe capacity evicts old delivery and chat identities without pretending unlimited replay retention
+ok 216 - dedupe capacity evicts old delivery and chat identities without pretending unlimited replay retention
+  ---
+  duration_ms: 0.6202
+  type: 'test'
+  ...
+# Subtest: dedupe TTL expires at its boundary while the session remains active
+ok 217 - dedupe TTL expires at its boundary while the session remains active
+  ---
+  duration_ms: 0.4996
+  type: 'test'
+  ...
+# Subtest: a matching revocation freezes intake and cannot be revived by another welcome
+ok 218 - a matching revocation freezes intake and cannot be revived by another welcome
+  ---
+  duration_ms: 0.6343
+  type: 'test'
+  ...
+# Subtest: unrelated or enabled-subscription revocation cannot freeze the current session
+ok 219 - unrelated or enabled-subscription revocation cannot freeze the current session
+  ---
+  duration_ms: 1.3371
+  type: 'test'
+  ...
+# Subtest: official reconnect URL yields an action without opening a network connection or handing over the session
+ok 220 - official reconnect URL yields an action without opening a network connection or handing over the session
+  ---
+  duration_ms: 1.7992
+  type: 'test'
+  ...
+# Subtest: reconnect URL lookalikes, unsafe schemes, credentials, fragments and nondefault ports are rejected
+ok 221 - reconnect URL lookalikes, unsafe schemes, credentials, fragments and nondefault ports are rejected
+  ---
+  duration_ms: 2.7035
+  type: 'test'
+  ...
+# Subtest: close is terminal and public state omits private raw chat, viewer and session identities
+ok 222 - close is terminal and public state omits private raw chat, viewer and session identities
+  ---
+  duration_ms: 1.0216
+  type: 'test'
+  ...
+# Subtest: constructor rejects invalid pinned identities, clocks and resource limits
+ok 223 - constructor rejects invalid pinned identities, clocks and resource limits
+  ---
+  duration_ms: 1.4205
+  type: 'test'
+  ...
+# Subtest: live evidence card offers two NASA inspection paths while preserving the simulator source contract
+ok 224 - live evidence card offers two NASA inspection paths while preserving the simulator source contract
+  ---
+  duration_ms: 6.4407
+  type: 'test'
+  ...
+# Subtest: source review is a manual host mark, independent of aggregate votes and poll rounds
+ok 225 - source review is a manual host mark, independent of aggregate votes and poll rounds
+  ---
+  duration_ms: 3.6227
+  type: 'test'
+  ...
+# Subtest: invalid marks do not change reviews, and public snapshots contain no viewer data or writable internal state
+ok 226 - invalid marks do not change reviews, and public snapshots contain no viewer data or writable internal state
+  ---
+  duration_ms: 0.858
+  type: 'test'
+  ...
+# Subtest: entry construction and public plan are inert; read-only scope and no send/persistence remain fixed
+ok 227 - entry construction and public plan are inert; read-only scope and no send/persistence remain fixed
+  ---
+  duration_ms: 6.4292
+  type: 'test'
+  ...
+# Subtest: invalid, cross-channel, accessor and hostile configuration cannot widen a review plan or echo errors
+ok 228 - invalid, cross-channel, accessor and hostile configuration cannot widen a review plan or echo errors
+  ---
+  duration_ms: 13.7936
+  type: 'test'
+  ...
+# Subtest: serialized booleans and approval-shaped objects never construct an owner
+ok 229 - serialized booleans and approval-shaped objects never construct an owner
+  ---
+  duration_ms: 5.9682
+  type: 'test'
+  ...
+# Subtest: only current private decision starts once; private receipt fields do not enter output
+ok 230 - only current private decision starts once; private receipt fields do not enter output
+  ---
+  duration_ms: 4.43
+  type: 'test'
+  ...
+# Subtest: deferred review cannot create side effects before private decision resolves
+ok 231 - deferred review cannot create side effects before private decision resolves
+  ---
+  duration_ms: 22.4449
+  type: 'test'
+  ...
+# Subtest: old private decision cannot approve a replacement run after cancellation
+ok 232 - old private decision cannot approve a replacement run after cancellation
+  ---
+  duration_ms: 1.0396
+  type: 'test'
+  ...
+# Subtest: denial is terminal for that request but a later explicit run can review again
+ok 233 - denial is terminal for that request but a later explicit run can review again
+  ---
+  duration_ms: 0.6701
+  type: 'test'
+  ...
+# Subtest: review exceptions and native rejections have fixed failures without raw diagnostics
+ok 234 - review exceptions and native rejections have fixed failures without raw diagnostics
+  ---
+  duration_ms: 0.7401
+  type: 'test'
+  ...
+# Subtest: unresolved review reaches a referenced deadline and late acceptance cannot start
+ok 235 - unresolved review reaches a referenced deadline and late acceptance cannot start
+  ---
+  duration_ms: 13.6236
+  type: 'test'
+  ...
+# Subtest: decision expires at the exact deadline even before the scheduled callback runs
+ok 236 - decision expires at the exact deadline even before the scheduled callback runs
+  ---
+  duration_ms: 0.9899
+  type: 'test'
+  ...
+# Subtest: pre-aborted, malformed and accessor start input never invokes review
+ok 237 - pre-aborted, malformed and accessor start input never invokes review
+  ---
+  duration_ms: 1.0257
+  type: 'test'
+  ...
+# Subtest: abort owns review lifetime and removes external listener before stale decisions settle
+ok 238 - abort owns review lifetime and removes external listener before stale decisions settle
+  ---
+  duration_ms: 7.5995
+  type: 'test'
+  ...
+# Subtest: a second start during pending review cannot create another review or owner
+ok 239 - a second start during pending review cannot create another review or owner
+  ---
+  duration_ms: 0.5732
+  type: 'test'
+  ...
+# Subtest: cancellation inside synchronous factory disposes its returned owner without starting it
+ok 240 - cancellation inside synchronous factory disposes its returned owner without starting it
+  ---
+  duration_ms: 0.5998
+  type: 'test'
+  ...
+# Subtest: invalid owner start getter is not invoked and valid owned stop is still called
+ok 241 - invalid owner start getter is not invoked and valid owned stop is still called
+  ---
+  duration_ms: 0.5722
+  type: 'test'
+  ...
+# Subtest: cancellation while owner starts aborts its lifetime and late success cannot revive entry
+ok 242 - cancellation while owner starts aborts its lifetime and late success cannot revive entry
+  ---
+  duration_ms: 2.7348
+  type: 'test'
+  ...
+# Subtest: owner throw rejection false and accessor success receipts fail closed without echo
+ok 243 - owner throw rejection false and accessor success receipts fail closed without echo
+  ---
+  duration_ms: 1.4808
+  type: 'test'
+  ...
+# Subtest: pending owner start has a bounded deadline and owned stop need not settle
+ok 244 - pending owner start has a bounded deadline and owned stop need not settle
+  ---
+  duration_ms: 14.1125
+  type: 'test'
+  ...
+# Subtest: active ownership abort and teardown reentry cannot start a new review
+ok 245 - active ownership abort and teardown reentry cannot start a new review
+  ---
+  duration_ms: 13.1345
+  type: 'test'
+  ...
+# Subtest: terminal stop cannot be revived by a pending review callback or later explicit start
+ok 246 - terminal stop cannot be revived by a pending review callback or later explicit start
+  ---
+  duration_ms: 1.4991
+  type: 'test'
+  ...
+# Subtest: clock cancellation before timer installation cannot leak a new timer or invoke review
+ok 247 - clock cancellation before timer installation cannot leak a new timer or invoke review
+  ---
+  duration_ms: 0.9403
+  type: 'test'
+  ...
+# Subtest: timer-factory cancellation clears its late handle without invoking review
+ok 248 - timer-factory cancellation clears its late handle without invoking review
+  ---
+  duration_ms: 0.4481
+  type: 'test'
+  ...
+# Subtest: foreign review thenable is not assimilated and cannot supply a decision
+ok 249 - foreign review thenable is not assimilated and cannot supply a decision
+  ---
+  duration_ms: 0.4562
+  type: 'test'
+  ...
+# Subtest: actual device owner issues no synthetic HTTP before review, then aborts its pending device acquisition
+ok 250 - actual device owner issues no synthetic HTTP before review, then aborts its pending device acquisition
+  ---
+  duration_ms: 16.8107
+  type: 'test'
+  ...
+# Subtest: review-only CLI help exposes no activation switch or owner action
+ok 251 - review-only CLI help exposes no activation switch or owner action
+  ---
+  duration_ms: 575.6023
+  type: 'test'
+  ...
+# Subtest: public identifier CLI emits fixed review plan while entry stays idle and unverified
+ok 252 - public identifier CLI emits fixed review plan while entry stays idle and unverified
+  ---
+  duration_ms: 443.1988
+  type: 'test'
+  ...
+# Subtest: CLI rejects activation credentials duplicate fields and cross-channel IDs without echoing supplied values
+ok 253 - CLI rejects activation credentials duplicate fields and cross-channel IDs without echoing supplied values
+  ---
+  duration_ms: 999.9429
+  type: 'test'
+  ...
+# Subtest: time consumed by start-timer cleanup still belongs to original success-publication deadline
+ok 254 - time consumed by start-timer cleanup still belongs to original success-publication deadline
+  ---
+  duration_ms: 4.7175
+  type: 'test'
+  ...
+# Subtest: factory returning exactly at start deadline cannot invoke owner start
+ok 255 - factory returning exactly at start deadline cannot invoke owner start
+  ---
+  duration_ms: 8.5956
+  type: 'test'
+  ...
+# Subtest: factory returning after start deadline is retired before any owner-start side effect
+ok 256 - factory returning after start deadline is retired before any owner-start side effect
+  ---
+  duration_ms: 1.1933
+  type: 'test'
+  ...
+# Subtest: synchronous owner success returned at deadline cannot publish active ownership
+ok 257 - synchronous owner success returned at deadline cannot publish active ownership
+  ---
+  duration_ms: 1.4311
+  type: 'test'
+  ...
+# Subtest: native owner success resolved after deadline retires even before timer callback delivery
+ok 258 - native owner success resolved after deadline retires even before timer callback delivery
+  ---
+  duration_ms: 1.0171
+  type: 'test'
+  ...
+# Subtest: factory and successful start strictly before deadline remain accepted without extending the window
+ok 259 - factory and successful start strictly before deadline remain accepted without extending the window
+  ---
+  duration_ms: 6.698
+  type: 'test'
+  ...
+# Subtest: completed start deadline is not an active-owner lease; explicit cancel still stops exactly once
+ok 260 - completed start deadline is not an active-owner lease; explicit cancel still stops exactly once
+  ---
+  duration_ms: 0.6039
+  type: 'test'
+  ...
+# Subtest: cancellation reentered while clearing start deadline cannot publish active state afterward
+ok 261 - cancellation reentered while clearing start deadline cannot publish active state afterward
+  ---
+  duration_ms: 0.8646
+  type: 'test'
+  ...
+# Subtest: validate: valid native JSON survives own zero span-data properties without changing projected content
+ok 262 - validate: valid native JSON survives own zero span-data properties without changing projected content
+  ---
+  duration_ms: 7.295
+  type: 'test'
+  ...
+# Subtest: validate: valid native JSON leaves byteLength, offset and buffer accessors unread
+ok 263 - validate: valid native JSON leaves byteLength, offset and buffer accessors unread
+  ---
+  duration_ms: 0.9691
+  type: 'test'
+  ...
+# Subtest: validate: decoder cannot substitute a different valid receipt through a shadow backing buffer
+ok 264 - validate: decoder cannot substitute a different valid receipt through a shadow backing buffer
+  ---
+  duration_ms: 0.8393
+  type: 'test'
+  ...
+# Subtest: subscribe: valid native JSON survives own zero span-data properties without changing projected content
+ok 265 - subscribe: valid native JSON survives own zero span-data properties without changing projected content
+  ---
+  duration_ms: 1.9746
+  type: 'test'
+  ...
+# Subtest: subscribe: valid native JSON leaves byteLength, offset and buffer accessors unread
+ok 266 - subscribe: valid native JSON leaves byteLength, offset and buffer accessors unread
+  ---
+  duration_ms: 3.0373
+  type: 'test'
+  ...
+# Subtest: subscribe: decoder cannot substitute a different valid receipt through a shadow backing buffer
+ok 267 - subscribe: decoder cannot substitute a different valid receipt through a shadow backing buffer
+  ---
+  duration_ms: 2.0188
+  type: 'test'
+  ...
+# Subtest: device: valid native JSON survives own zero span-data properties without changing projected content
+ok 268 - device: valid native JSON survives own zero span-data properties without changing projected content
+  ---
+  duration_ms: 24.2857
+  type: 'test'
+  ...
+# Subtest: device: valid native JSON leaves byteLength, offset and buffer accessors unread
+ok 269 - device: valid native JSON leaves byteLength, offset and buffer accessors unread
+  ---
+  duration_ms: 0.7696
+  type: 'test'
+  ...
+# Subtest: device: decoder cannot substitute a different valid receipt through a shadow backing buffer
+ok 270 - device: decoder cannot substitute a different valid receipt through a shadow backing buffer
+  ---
+  duration_ms: 0.7762
+  type: 'test'
+  ...
+# Subtest: poll: valid native JSON survives own zero span-data properties without changing projected content
+ok 271 - poll: valid native JSON survives own zero span-data properties without changing projected content
+  ---
+  duration_ms: 1.6373
+  type: 'test'
+  ...
+# Subtest: poll: valid native JSON leaves byteLength, offset and buffer accessors unread
+ok 272 - poll: valid native JSON leaves byteLength, offset and buffer accessors unread
+  ---
+  duration_ms: 0.7033
+  type: 'test'
+  ...
+# Subtest: poll: decoder cannot substitute a different valid receipt through a shadow backing buffer
+ok 273 - poll: decoder cannot substitute a different valid receipt through a shadow backing buffer
+  ---
+  duration_ms: 0.6047
+  type: 'test'
+  ...
+# Subtest: all four ports stream split UTF8 BOM and exact offset views without decoding malformed backing bytes
+ok 274 - all four ports stream split UTF8 BOM and exact offset views without decoding malformed backing bytes
+  ---
+  duration_ms: 20.5121
+  type: 'test'
+  ...
+# Subtest: existing actual cumulative65536-byte acceptance and65537-byte cap precede decoding for every port
+ok 275 - existing actual cumulative65536-byte acceptance and65537-byte cap precede decoding for every port
+  ---
+  duration_ms: 9.9005
+  type: 'test'
+  ...
+# Subtest: proxy brands and malformed small UTF8 remain fixed private failures with one cleanup
+ok 276 - proxy brands and malformed small UTF8 remain fixed private failures with one cleanup
+  ---
+  duration_ms: 10.2431
+  type: 'test'
+  ...
+# Subtest: descriptor and real-view prototype cancellation reentry never decodes caller getters or reads another chunk
+ok 277 - descriptor and real-view prototype cancellation reentry never decodes caller getters or reads another chunk
+  ---
+  duration_ms: 5.5784
+  type: 'test'
+  ...
+# Subtest: public facades have separate duties and begin with no staged ingress
+ok 278 - public facades have separate duties and begin with no staged ingress
+  ---
+  duration_ms: 13.1292
+  type: 'test'
+  ...
+# Subtest: constructor pins one own channel and bounded lease/configuration
+ok 279 - constructor pins one own channel and bounded lease/configuration
+  ---
+  duration_ms: 2.0209
+  type: 'test'
+  ...
+# Subtest: constructor descriptors are checked without invoking getters
+ok 280 - constructor descriptors are checked without invoking getters
+  ---
+  duration_ms: 0.9519
+  type: 'test'
+  ...
+# Subtest: issue returns only an inert frozen function whose identity cannot survive JSON or cloning
+ok 281 - issue returns only an inert frozen function whose identity cannot survive JSON or cloning
+  ---
+  duration_ms: 2.0709
+  type: 'test'
+  ...
+# Subtest: valid scoped ingress records a staged vote and another vote from that viewer changes it
+ok 282 - valid scoped ingress records a staged vote and another vote from that viewer changes it
+  ---
+  duration_ms: 3.533
+  type: 'test'
+  ...
+# Subtest: simulation keeps the original origin/connection semantics without staged authority
+ok 283 - simulation keeps the original origin/connection semantics without staged authority
+  ---
+  duration_ms: 1.1547
+  type: 'test'
+  ...
+# Subtest: both namespaces own independent event replay caches and viewer totals
+ok 284 - both namespaces own independent event replay caches and viewer totals
+  ---
+  duration_ms: 1.955
+  type: 'test'
+  ...
+# Subtest: fake, JSON-derived, bound and foreign capabilities cannot consume a valid event ID
+ok 285 - fake, JSON-derived, bound and foreign capabilities cannot consume a valid event ID
+  ---
+  duration_ms: 4.2831
+  type: 'test'
+  ...
+# Subtest: all four packet pins are enforced before engine metrics or replay state change
+ok 286 - all four packet pins are enforced before engine metrics or replay state change
+  ---
+  duration_ms: 5.0563
+  type: 'test'
+  ...
+# Subtest: packet and event allowlists reject malformed input without reading getters or poisoning replay
+ok 287 - packet and event allowlists reject malformed input without reading getters or poisoning replay
+  ---
+  duration_ms: 3.8973
+  type: 'test'
+  ...
+# Subtest: only bounded transport-unverified normalized events can enter staged engine
+ok 288 - only bounded transport-unverified normalized events can enter staged engine
+  ---
+  duration_ms: 74.055
+  type: 'test'
+  ...
+# Subtest: an invalid issue revokes the old capability and clears cue while preserving vote/window/cache
+ok 289 - an invalid issue revokes the old capability and clears cue while preserving vote/window/cache
+  ---
+  duration_ms: 1.8092
+  type: 'test'
+  ...
+# Subtest: issue validates full own scope without invoking getters and fails closed on each malformed attempt
+ok 290 - issue validates full own scope without invoking getters and fails closed on each malformed attempt
+  ---
+  duration_ms: 2.7897
+  type: 'test'
+  ...
+# Subtest: reissue replaces local authority while retaining fixed round deadline, votes and replay cache
+ok 291 - reissue replaces local authority while retaining fixed round deadline, votes and replay cache
+  ---
+  duration_ms: 1.3603
+  type: 'test'
+  ...
+# Subtest: lease is usable just before its deadline and expires exactly at it without pausing the vote
+ok 292 - lease is usable just before its deadline and expires exactly at it without pausing the vote
+  ---
+  duration_ms: 1.4162
+  type: 'test'
+  ...
+# Subtest: unsafe lease deadline fails closed rather than issuing an overflowing capability
+ok 293 - unsafe lease deadline fails closed rather than issuing an overflowing capability
+  ---
+  duration_ms: 0.8828
+  type: 'test'
+  ...
+# Subtest: unknown and old revoke attempts do not revoke a current replacement
+ok 294 - unknown and old revoke attempts do not revoke a current replacement
+  ---
+  duration_ms: 1.1768
+  type: 'test'
+  ...
+# Subtest: a queued revoked callback cannot poison the next generation replay cache
+ok 295 - a queued revoked callback cannot poison the next generation replay cache
+  ---
+  duration_ms: 3.1173
+  type: 'test'
+  ...
+# Subtest: descriptor-trap reentry cannot deliver through a capability revoked or replaced during inspection
+ok 296 - descriptor-trap reentry cannot deliver through a capability revoked or replaced during inspection
+  ---
+  duration_ms: 3.5091
+  type: 'test'
+  ...
+# Subtest: expiry is rechecked after descriptor inspection and a clock rollback cannot revive an expired identity
+ok 297 - expiry is rechecked after descriptor inspection and a clock rollback cannot revive an expired identity
+  ---
+  duration_ms: 1.0669
+  type: 'test'
+  ...
+# Subtest: failed replacement also revokes a capability minted reentrantly during malformed scope inspection
+ok 298 - failed replacement also revokes a capability minted reentrantly during malformed scope inspection
+  ---
+  duration_ms: 1.2556
+  type: 'test'
+  ...
+# Subtest: stop is terminal/idempotent and leaves simulation independent
+ok 299 - stop is terminal/idempotent and leaves simulation independent
+  ---
+  duration_ms: 1.3996
+  type: 'test'
+  ...
+# Subtest: source cue belongs only to staged ingress, with a fixed window and no vote requirement
+ok 300 - source cue belongs only to staged ingress, with a fixed window and no vote requirement
+  ---
+  duration_ms: 1.6124
+  type: 'test'
+  ...
+# Subtest: revocation clears staged source cue but retains request count and vote deadline
+ok 301 - revocation clears staged source cue but retains request count and vote deadline
+  ---
+  duration_ms: 2.9262
+  type: 'test'
+  ...
+# Subtest: new issue clears active cue without zeroing its cumulative count or extending a vote
+ok 302 - new issue clears active cue without zeroing its cumulative count or extending a vote
+  ---
+  duration_ms: 0.8079
+  type: 'test'
+  ...
+# Subtest: staged reset revokes current capability, clears totals/cue and preserves replay protection
+ok 303 - staged reset revokes current capability, clears totals/cue and preserves replay protection
+  ---
+  duration_ms: 1.5497
+  type: 'test'
+  ...
+# Subtest: opening/closing staged rounds preserves lease and does not confer simulation authority
+ok 304 - opening/closing staged rounds preserves lease and does not confer simulation authority
+  ---
+  duration_ms: 1.1113
+  type: 'test'
+  ...
+# Subtest: configured bounded staged replay eviction does not affect simulation cache
+ok 305 - configured bounded staged replay eviction does not affect simulation cache
+  ---
+  duration_ms: 49.017
+  type: 'test'
+  ...
+# Subtest: snapshots and retained card inputs cannot mutate either namespace or disclose capability data
+ok 306 - snapshots and retained card inputs cannot mutate either namespace or disclose capability data
+  ---
+  duration_ms: 6.5241
+  type: 'test'
+  ...
+# Subtest: old transport coordinator cannot enter staged or original board without an explicit local capability
+ok 307 - old transport coordinator cannot enter staged or original board without an explicit local capability
+  ---
+  duration_ms: 121.2001
+  type: 'test'
+  ...
+# Subtest: live aggregate counts one current choice per viewer, retains dedupe across reset and excludes closing instant
+ok 308 - live aggregate counts one current choice per viewer, retains dedupe across reset and excludes closing instant
+  ---
+  duration_ms: 4.408
+  type: 'test'
+  ...
+# Subtest: source cue has a fixed deadline and disconnect clears it without accepting chat
+ok 309 - source cue has a fixed deadline and disconnect clears it without accepting chat
+  ---
+  duration_ms: 0.829
+  type: 'test'
+  ...
+# Subtest: missing identifiers, malformed input and stale source events never enter a live aggregate
+ok 310 - missing identifiers, malformed input and stale source events never enter a live aggregate
+  ---
+  duration_ms: 1.0282
+  type: 'test'
+  ...
+# Subtest: native host construction/inspection/stop are inert and expose no event or simulation facade
+ok 311 - native host construction/inspection/stop are inert and expose no event or simulation facade
+  ---
+  duration_ms: 2.8064
+  type: 'test'
+  ...
+# Subtest: overlay handler is read-only, denies simulator/event routes and does not require a listening socket for checks
+ok 312 - overlay handler is read-only, denies simulator/event routes and does not require a listening socket for checks
+  ---
+  duration_ms: 110.1187
+  type: 'test'
+  ...
+# Subtest: actual Twitch CLI help, plan and redirected start remain inert
+ok 313 - actual Twitch CLI help, plan and redirected start remain inert
+  ---
+  duration_ms: 11701.6894
+  type: 'test'
+  ...
+# Subtest: actual native-host modules compose through isolated synthetic external ports
+ok 314 - actual native-host modules compose through isolated synthetic external ports
+  ---
+  duration_ms: 398.8889
+  type: 'test'
+  ...
+# composition-child-result {"exitCode":0,"stdout":"TAP version 13\\n\# (node:30124) ExperimentalWarning: Module mocking is an experimental feature and might change at any time\\n\# (Use `node --trace-warnings ...` to show where the warning was created)\\n\# (node:30124) DeprecationWarning: mock.module(): options.defaultExport is deprecated. Use options.exports.default instead.\\n\# Subtest: native host wires actual device/vault/coordinator/HTTP/wrapper through scoped post-ack tally and shutdown\\nok 1 - native host wires actual device/vault/coordinator/HTTP/wrapper through scoped post-ack tally and shutdown\\n  ---\\n  duration_ms: 67.1215\\n  type: 'test'\\n  ...\\n1..1\\n\# tests 1\\n\# suites 0\\n\# pass 1\\n\# fail 0\\n\# cancelled 0\\n\# skipped 0\\n\# todo 0\\n\# duration_ms 285.3869\\n","stderr":""}
+# Subtest: owner input cancellation across CLI startup awaits settles without a second event
+ok 315 - owner input cancellation across CLI startup awaits settles without a second event
+  ---
+  duration_ms: 274.6858
+  type: 'test'
+  ...
+# shutdown-child-result {"exitCode":0,"stdout":"TAP version 13\\n\# (node:34112) ExperimentalWarning: Module mocking is an experimental feature and might change at any time\\n\# (Use `node --trace-warnings ...` to show where the warning was created)\\n\# (node:34112) DeprecationWarning: mock.module(): options.namedExports is deprecated. Use options.exports instead.\\n\# Subtest: closed owner input at startup await boundaries cannot publish a display or wait for another abort\\nok 1 - closed owner input at startup await boundaries cannot publish a display or wait for another abort\\n  ---\\n  duration_ms: 28.8745\\n  type: 'test'\\n  ...\\n\# shutdown-observations [{\\"timing\\":\\"during_host_start\\",\\"settledAfterSoleCancellation\\":true,\\"ownerDisplayPublished\\":false,\\"hostStop\\":1,\\"serverCreated\\":0,\\"listen\\":0,\\"serverClose\\":0,\\"closeConnections\\":0},{\\"timing\\":\\"during_server_bind\\",\\"settledAfterSoleCancellation\\":true,\\"ownerDisplayPublished\\":false,\\"hostStop\\":1,\\"serverCreated\\":1,\\"listen\\":1,\\"serverClose\\":1,\\"closeConnections\\":1}]\\n1..1\\n\# tests 1\\n\# suites 0\\n\# pass 1\\n\# fail 0\\n\# cancelled 0\\n\# skipped 0\\n\# todo 0\\n\# duration_ms 169.8585\\n","stderr":""}
+# Subtest: review retries unmatched or blank input without echo and accepts only the corrected own-channel phrase
+ok 316 - review retries unmatched or blank input without echo and accepts only the corrected own-channel phrase
+  ---
+  duration_ms: 4.1771
+  type: 'test'
+  ...
+# Subtest: review keeps its original deadline through retries and rejects a late phrase even before the timer callback
+ok 317 - review keeps its original deadline through retries and rejects a late phrase even before the timer callback
+  ---
+  duration_ms: 3.75
+  type: 'test'
+  ...
+# Subtest: review distinguishes explicit cancellation, input close and timeout and retires signal listeners
+ok 318 - review distinguishes explicit cancellation, input close and timeout and retires signal listeners
+  ---
+  duration_ms: 3.2018
+  type: 'test'
+  ...
+# Subtest: operator argument parser is inert by default and rejects unknown/secret/duplicate flags
+ok 319 - operator argument parser is inert by default and rejects unknown/secret/duplicate flags
+  ---
+  duration_ms: 4.3907
+  type: 'test'
+  ...
+# Subtest: public plan is usable without a terminal and never calls a network port
+ok 320 - public plan is usable without a terminal and never calls a network port
+  ---
+  duration_ms: 2.378
+  type: 'test'
+  ...
+# Subtest: authorize rejects redirected input/output before prompting or fetching
+ok 321 - authorize rejects redirected input/output before prompting or fetching
+  ---
+  duration_ms: 0.6054
+  type: 'test'
+  ...
+# Subtest: wrong typed review cancels without requesting a device code
+ok 322 - wrong typed review cancels without requesting a device code
+  ---
+  duration_ms: 3.3146
+  type: 'test'
+  ...
+# Subtest: accepted review composes actual device ports, grant flow and identity validation with synthetic HTTP
+ok 323 - accepted review composes actual device ports, grant flow and identity validation with synthetic HTTP
+  ---
+  duration_ms: 144.3492
+  type: 'test'
+  ...
+# Subtest: a different validated user fails own-channel binding without exposing service diagnostics
+ok 324 - a different validated user fails own-channel binding without exposing service diagnostics
+  ---
+  duration_ms: 21.5182
+  type: 'test'
+  ...
+# Subtest: aborting the concrete review settles promptly with no network request
+ok 325 - aborting the concrete review settles promptly with no network request
+  ---
+  duration_ms: 0.8286
+  type: 'test'
+  ...
+# Subtest: cancellation after the private prompt retires polling and never validates a token
+ok 326 - cancellation after the private prompt retires polling and never validates a token
+  ---
+  duration_ms: 3.0221
+  type: 'test'
+  ...
+# Subtest: actual CLI help and redirected authorize remain inert without echoing invalid secret input
+ok 327 - actual CLI help and redirected authorize remain inert without echoing invalid secret input
+  ---
+  duration_ms: 1132.7837
+  type: 'test'
+  ...
+# Subtest: HTTP source request publishes simulated cue state before a vote and expires without chat output
+ok 328 - HTTP source request publishes simulated cue state before a vote and expires without chat output
+  ---
+  duration_ms: 235.4154
+  type: 'test'
+  ...
+# Subtest: disconnected source previews cannot become cues by replaying after reconnect and reset clears cues
+ok 329 - disconnected source previews cannot become cues by replaying after reconnect and reset clears cues
+  ---
+  duration_ms: 126.689
+  type: 'test'
+  ...
+# Subtest: controller and overlay assets are served with security headers and explicit simulation labels
+ok 330 - controller and overlay assets are served with security headers and explicit simulation labels
+  ---
+  duration_ms: 394.8024
+  type: 'test'
+  ...
+# Subtest: server round trip: source, disconnected rejection, open vote, replay, change, close
+ok 331 - server round trip: source, disconnected rejection, open vote, replay, change, close
+  ---
+  duration_ms: 306.0585
+  type: 'test'
+  ...
+# Subtest: simulator endpoint cannot claim a real Twitch origin
+ok 332 - simulator endpoint cannot claim a real Twitch origin
+  ---
+  duration_ms: 25.8882
+  type: 'test'
+  ...
+# Subtest: HTTP simulator preserves event time so earlier-round messages cannot enter a new vote
+ok 333 - HTTP simulator preserves event time so earlier-round messages cannot enter a new vote
+  ---
+  duration_ms: 43.1608
+  type: 'test'
+  ...
+# Subtest: cross-origin writes, missing custom header, invalid host and content type are blocked
+ok 334 - cross-origin writes, missing custom header, invalid host and content type are blocked
+  ---
+  duration_ms: 55.2895
+  type: 'test'
+  ...
+# Subtest: malformed JSON and nonobject payloads return actionable errors without crashing
+ok 335 - malformed JSON and nonobject payloads return actionable errors without crashing
+  ---
+  duration_ms: 43.4954
+  type: 'test'
+  ...
+# Subtest: unsupported routes and methods do not expose source, environment or arbitrary files
+ok 336 - unsupported routes and methods do not expose source, environment or arbitrary files
+  ---
+  duration_ms: 94.8425
+  type: 'test'
+  ...
+# Subtest: a separate server instance has no inherited votes
+ok 337 - a separate server instance has no inherited votes
+  ---
+  duration_ms: 9.7719
+  type: 'test'
+  ...
+# Subtest: initial source cue is inactive with explicit simulation provenance
+ok 338 - initial source cue is inactive with explicit simulation provenance
+  ---
+  duration_ms: 47.0826
+  type: 'test'
+  ...
+# Subtest: connected source command opens a 15-second cue while voting remains idle
+ok 339 - connected source command opens a 15-second cue while voting remains idle
+  ---
+  duration_ms: 1.6922
+  type: 'test'
+  ...
+# Subtest: disconnected and connecting source commands retain the local source reply without publishing
+ok 340 - disconnected and connecting source commands retain the local source reply without publishing
+  ---
+  duration_ms: 1.3291
+  type: 'test'
+  ...
+# Subtest: replaying an offline source request after reconnect cannot publish a cue
+ok 341 - replaying an offline source request after reconnect cannot publish a cue
+  ---
+  duration_ms: 0.8923
+  type: 'test'
+  ...
+# Subtest: cue expires at its exact deadline even without more incoming events
+ok 342 - cue expires at its exact deadline even without more incoming events
+  ---
+  duration_ms: 0.6646
+  type: 'test'
+  ...
+# Subtest: duplicate source events do not refresh time or inflate the request count
+ok 343 - duplicate source events do not refresh time or inflate the request count
+  ---
+  duration_ms: 0.4749
+  type: 'test'
+  ...
+# Subtest: unique source requests during an active window count without extending its first deadline
+ok 344 - unique source requests during an active window count without extending its first deadline
+  ---
+  duration_ms: 1.9483
+  type: 'test'
+  ...
+# Subtest: first new source event after expiry starts another window and retains the cumulative count
+ok 345 - first new source event after expiry starts another window and retains the cumulative count
+  ---
+  duration_ms: 0.6045
+  type: 'test'
+  ...
+# Subtest: a duplicate arriving at the cue deadline does not reopen the expired window
+ok 346 - a duplicate arriving at the cue deadline does not reopen the expired window
+  ---
+  duration_ms: 0.6482
+  type: 'test'
+  ...
+# Subtest: disconnect and connecting clear active cue timestamps while retaining the request count
+ok 347 - disconnect and connecting clear active cue timestamps while retaining the request count
+  ---
+  duration_ms: 1.236
+  type: 'test'
+  ...
+# Subtest: invalid connection values and redundant connected status cannot clear an active cue
+ok 348 - invalid connection values and redundant connected status cannot clear an active cue
+  ---
+  duration_ms: 2.6935
+  type: 'test'
+  ...
+# Subtest: reset clears source cue and its count while preserving event replay protection
+ok 349 - reset clears source cue and its count while preserving event replay protection
+  ---
+  duration_ms: 0.8765
+  type: 'test'
+  ...
+# Subtest: old optional timestamps retain source reply without opening a cue
+ok 350 - old optional timestamps retain source reply without opening a cue
+  ---
+  duration_ms: 0.3708
+  type: 'test'
+  ...
+# Subtest: timestamp freshness admits its exact configured age boundary
+ok 351 - timestamp freshness admits its exact configured age boundary
+  ---
+  duration_ms: 0.9824
+  type: 'test'
+  ...
+# Subtest: a stale source event cannot be corrected and replayed under the same event ID
+ok 352 - a stale source event cannot be corrected and replayed under the same event ID
+  ---
+  duration_ms: 0.4686
+  type: 'test'
+  ...
+# Subtest: omitted timestamp and tolerated future timestamp use receive time for the cue deadline
+ok 353 - omitted timestamp and tolerated future timestamp use receive time for the cue deadline
+  ---
+  duration_ms: 0.442
+  type: 'test'
+  ...
+# Subtest: unsafe or too-future event timestamps fail before source publication
+ok 354 - unsafe or too-future event timestamps fail before source publication
+  ---
+  duration_ms: 0.7477
+  type: 'test'
+  ...
+# Subtest: an overflowing cue deadline preserves the local source reply without publishing
+ok 355 - an overflowing cue deadline preserves the local source reply without publishing
+  ---
+  duration_ms: 0.507
+  type: 'test'
+  ...
+# Subtest: Twitch and unverified EventSub origins still cannot publish source cues
+ok 356 - Twitch and unverified EventSub origins still cannot publish source cues
+  ---
+  duration_ms: 0.7733
+  type: 'test'
+  ...
+# Subtest: invalid, ordinary and help commands do not publish a source cue
+ok 357 - invalid, ordinary and help commands do not publish a source cue
+  ---
+  duration_ms: 0.9789
+  type: 'test'
+  ...
+# Subtest: source requests leave vote counts unchanged while vote lifecycle leaves the cue independent
+ok 358 - source requests leave vote counts unchanged while vote lifecycle leaves the cue independent
+  ---
+  duration_ms: 1.0663
+  type: 'test'
+  ...
+# Subtest: source cue snapshots are immutable, independent and contain no viewer or raw-message identity
+ok 359 - source cue snapshots are immutable, independent and contain no viewer or raw-message identity
+  ---
+  duration_ms: 1.4455
+  type: 'test'
+  ...
+# Subtest: source cue duration is configurable only within safe integer bounds
+ok 360 - source cue duration is configurable only within safe integer bounds
+  ---
+  duration_ms: 1.2731
+  type: 'test'
+  ...
+# Subtest: public facade is frozen and has no raw event, scope, capability or private callback path
+ok 361 - public facade is frozen and has no raw event, scope, capability or private callback path
+  ---
+  duration_ms: 13.2755
+  type: 'test'
+  ...
+# Subtest: constructor requires own-channel explicit dependencies and forbids a user-supplied onEvent bridge
+ok 362 - constructor requires own-channel explicit dependencies and forbids a user-supplied onEvent bridge
+  ---
+  duration_ms: 1.8399
+  type: 'test'
+  ...
+# Subtest: credential host private bridge emits frozen checked202 scope identity per run, including equal-valued fresh scope
+ok 363 - credential host private bridge emits frozen checked202 scope identity per run, including equal-valued fresh scope
+  ---
+  duration_ms: 27.5388
+  type: 'test'
+  ...
+# Subtest: GET validation, welcome and pinnedPOST202 alone never connect the staged board or tally a vote
+ok 364 - GET validation, welcome and pinnedPOST202 alone never connect the staged board or tally a vote
+  ---
+  duration_ms: 7.8603
+  type: 'test'
+  ...
+# Subtest: first actually delivered chat binds scope then counts a vote; same viewer changes one unique choice
+ok 365 - first actually delivered chat binds scope then counts a vote; same viewer changes one unique choice
+  ---
+  duration_ms: 36.1537
+  type: 'test'
+  ...
+# Subtest: ordinary chat may bind first scope without creating votes or source requests
+ok 366 - ordinary chat may bind first scope without creating votes or source requests
+  ---
+  duration_ms: 7.9602
+  type: 'test'
+  ...
+# Subtest: delivery/chat replays do not change staged tally or extend the first lease
+ok 367 - delivery/chat replays do not change staged tally or extend the first lease
+  ---
+  duration_ms: 69.6688
+  type: 'test'
+  ...
+# Subtest: original metadata timestamp remains authoritative for votes made before the round opened
+ok 368 - original metadata timestamp remains authoritative for votes made before the round opened
+  ---
+  duration_ms: 31.4085
+  type: 'test'
+  ...
+# Subtest: vote closes exactly at its deadline while ingress lease and transport remain separate
+ok 369 - vote closes exactly at its deadline while ingress lease and transport remain separate
+  ---
+  duration_ms: 11.0688
+  type: 'test'
+  ...
+# Subtest: simulation retains its original API, counts and caches independently in both directions
+ok 370 - simulation retains its original API, counts and caches independently in both directions
+  ---
+  duration_ms: 7.0386
+  type: 'test'
+  ...
+# Subtest: source requests use only staged fixed cue window without requiring a vote
+ok 371 - source requests use only staged fixed cue window without requiring a vote
+  ---
+  duration_ms: 9.6937
+  type: 'test'
+  ...
+# Subtest: stale source command preserves the original timestamp and cannot open a cue
+ok 372 - stale source command preserves the original timestamp and cannot open a cue
+  ---
+  duration_ms: 5.3056
+  type: 'test'
+  ...
+# Subtest: refresh retires old cue immediately and binds only after a new run actually delivers an event
+ok 373 - refresh retires old cue immediately and binds only after a new run actually delivers an event
+  ---
+  duration_ms: 11.9213
+  type: 'test'
+  ...
+# Subtest: fresh scope after refresh preserves staged replay memory and old callbacks cannot clear new cue or tally
+ok 374 - fresh scope after refresh preserves staged replay memory and old callbacks cannot clear new cue or tally
+  ---
+  duration_ms: 9.1114
+  type: 'test'
+  ...
+# Subtest: busy lifecycle calls preserve active scope, cue, lease and the outstanding refresh operation
+ok 375 - busy lifecycle calls preserve active scope, cue, lease and the outstanding refresh operation
+  ---
+  duration_ms: 18.6925
+  type: 'test'
+  ...
+# Subtest: lease expires at its exact deadline and further old-scope events cannot silently renew it
+ok 376 - lease expires at its exact deadline and further old-scope events cannot silently renew it
+  ---
+  duration_ms: 31.5157
+  type: 'test'
+  ...
+# Subtest: reset clears round/cue and revokes scope; reopening alone cannot authorize old callbacks
+ok 377 - reset clears round/cue and revokes scope; reopening alone cannot authorize old callbacks
+  ---
+  duration_ms: 8.7598
+  type: 'test'
+  ...
+# Subtest: revoke clears staged cue while retaining totals/window and a new explicit start can bind again
+ok 378 - revoke clears staged cue while retaining totals/window and a new explicit start can bind again
+  ---
+  duration_ms: 7.7572
+  type: 'test'
+  ...
+# Subtest: stop is terminal and leaves simulation usable while old staged callbacks cannot tally
+ok 379 - stop is terminal and leaves simulation usable while old staged callbacks cannot tally
+  ---
+  duration_ms: 4.802
+  type: 'test'
+  ...
+# Subtest: invalid acknowledgement cannot create a binding or poison a same-ID event in a later valid run
+ok 380 - invalid acknowledgement cannot create a binding or poison a same-ID event in a later valid run
+  ---
+  duration_ms: 6.3116
+  type: 'test'
+  ...
+# Subtest: wrong channel, shared-chat source, malformed chat and future timestamps cannot bind or consume IDs
+ok 381 - wrong channel, shared-chat source, malformed chat and future timestamps cannot bind or consume IDs
+  ---
+  duration_ms: 36.5164
+  type: 'test'
+  ...
+# Subtest: failed refreshed identity retires scope and cue without changing existing votes or deadline
+ok 382 - failed refreshed identity retires scope and cue without changing existing votes or deadline
+  ---
+  duration_ms: 4.703
+  type: 'test'
+  ...
+# Subtest: hanging subscription body never binds, and timeout or failed cleanup leaks no raw data
+ok 383 - hanging subscription body never binds, and timeout or failed cleanup leaks no raw data
+  ---
+  duration_ms: 10.4734
+  type: 'test'
+  ...
+# Subtest: revoke pending validation and late HTTP response cannot first-bind an old scope after restart
+ok 384 - revoke pending validation and late HTTP response cannot first-bind an old scope after restart
+  ---
+  duration_ms: 8.9403
+  type: 'test'
+  ...
+# Subtest: stop settles ignored refresh exchange and late grant cannot reactivate staged capability
+ok 385 - stop settles ignored refresh exchange and late grant cannot reactivate staged capability
+  ---
+  duration_ms: 4.9934
+  type: 'test'
+  ...
+# Subtest: reset during pending refresh retires old scope before explicit restart and late result cannot clear new binding
+ok 386 - reset during pending refresh retires old scope before explicit restart and late result cannot clear new binding
+  ---
+  duration_ms: 8.4444
+  type: 'test'
+  ...
+# Subtest: hostile asynchronous socket close stays nonblocking while refresh and stop retire staged authority
+ok 387 - hostile asynchronous socket close stays nonblocking while refresh and stop retire staged authority
+  ---
+  duration_ms: 6.3613
+  type: 'test'
+  ...
+# Subtest: cleanup reentry cannot publish a new scope into the current refresh or undo terminal stop
+ok 388 - cleanup reentry cannot publish a new scope into the current refresh or undo terminal stop
+  ---
+  duration_ms: 13.5631
+  type: 'test'
+  ...
+# Subtest: private board controls preserve lease when legal and reject invalid duration without state mutation
+ok 389 - private board controls preserve lease when legal and reject invalid duration without state mutation
+  ---
+  duration_ms: 4.5204
+  type: 'test'
+  ...
+# Subtest: public snapshots cannot mutate nested board/session state and disclose no scope or original input
+ok 390 - public snapshots cannot mutate nested board/session state and disclose no scope or original input
+  ---
+  duration_ms: 31.2988
+  type: 'test'
+  ...
+# Subtest: initial state and an attempted plan explicitly remain offline and unverified
+ok 391 - initial state and an attempted plan explicitly remain offline and unverified
+  ---
+  duration_ms: 4.0721
+  type: 'test'
+  ...
+# Subtest: synthetic validation pins client and reader and records expiry and hourly refresh bounds
+ok 392 - synthetic validation pins client and reader and records expiry and hourly refresh bounds
+  ---
+  duration_ms: 1.3254
+  type: 'test'
+  ...
+# Subtest: request proposal has the exact read-chat condition and WebSocket session without headers or secrets
+ok 393 - request proposal has the exact read-chat condition and WebSocket session without headers or secrets
+  ---
+  duration_ms: 1.8339
+  type: 'test'
+  ...
+# Subtest: a matching synthetic 202 acknowledgement changes phase without asserting real authorization
+ok 394 - a matching synthetic 202 acknowledgement changes phase without asserting real authorization
+  ---
+  duration_ms: 2.9162
+  type: 'test'
+  ...
+# Subtest: acknowledgement alone cannot replace token validation or a planned session
+ok 395 - acknowledgement alone cannot replace token validation or a planned session
+  ---
+  duration_ms: 0.8272
+  type: 'test'
+  ...
+# Subtest: own-channel-only defaults reject a different reader and broadcaster
+ok 396 - own-channel-only defaults reject a different reader and broadcaster
+  ---
+  duration_ms: 0.9714
+  type: 'test'
+  ...
+# Subtest: explicitly relaxed channel policy still pins the configured reader rather than the broadcaster
+ok 397 - explicitly relaxed channel policy still pins the configured reader rather than the broadcaster
+  ---
+  duration_ms: 37.8955
+  type: 'test'
+  ...
+# Subtest: read scope is required; extra scopes cannot turn this API into a send-chat authorization
+ok 398 - read scope is required; extra scopes cannot turn this API into a send-chat authorization
+  ---
+  duration_ms: 0.5911
+  type: 'test'
+  ...
+# Subtest: wrong client, reader, missing scope and 401 validation fail closed after acknowledgement
+ok 399 - wrong client, reader, missing scope and 401 validation fail closed after acknowledgement
+  ---
+  duration_ms: 2.9071
+  type: 'test'
+  ...
+# Subtest: receipt provenance is mandatory and unsupported provenance cannot retain a previous validation
+ok 400 - receipt provenance is mandatory and unsupported provenance cannot retain a previous validation
+  ---
+  duration_ms: 1.2949
+  type: 'test'
+  ...
+# Subtest: validation rejects malformed bodies and unsafe expires_in without retaining eligibility
+ok 401 - validation rejects malformed bodies and unsafe expires_in without retaining eligibility
+  ---
+  duration_ms: 4.1529
+  type: 'test'
+  ...
+# Subtest: token minimum lifetime admits exactly 30 seconds and refuses a shorter validation
+ok 402 - token minimum lifetime admits exactly 30 seconds and refuses a shorter validation
+  ---
+  duration_ms: 0.5367
+  type: 'test'
+  ...
+# Subtest: planning and acknowledgement each recheck remaining lifetime at their receive time
+ok 403 - planning and acknowledgement each recheck remaining lifetime at their receive time
+  ---
+  duration_ms: 0.597
+  type: 'test'
+  ...
+# Subtest: validation becomes required at the exact hourly refresh boundary
+ok 404 - validation becomes required at the exact hourly refresh boundary
+  ---
+  duration_ms: 0.5571
+  type: 'test'
+  ...
+# Subtest: token expiry invalidates an acknowledged state at its exact boundary
+ok 405 - token expiry invalidates an acknowledged state at its exact boundary
+  ---
+  duration_ms: 0.6612
+  type: 'test'
+  ...
+# Subtest: successful acknowledgement is not invalidated merely by passing the subscribe deadline
+ok 406 - successful acknowledgement is not invalidated merely by passing the subscribe deadline
+  ---
+  duration_ms: 0.5357
+  type: 'test'
+  ...
+# Subtest: a repeated same-session proposal after the old subscribe deadline preserves acknowledged state
+ok 407 - a repeated same-session proposal after the old subscribe deadline preserves acknowledged state
+  ---
+  duration_ms: 0.3962
+  type: 'test'
+  ...
+# Subtest: unsolicited post-acknowledgement 401 or mismatched receipts clear the old acknowledged state
+ok 408 - unsolicited post-acknowledgement 401 or mismatched receipts clear the old acknowledged state
+  ---
+  duration_ms: 0.8934
+  type: 'test'
+  ...
+# Subtest: acknowledgement after hourly invalidation retains the precise validation-required reason
+ok 409 - acknowledgement after hourly invalidation retains the precise validation-required reason
+  ---
+  duration_ms: 0.5132
+  type: 'test'
+  ...
+# Subtest: subscribe deadline starts at local welcome receipt, rather than proposal time
+ok 410 - subscribe deadline starts at local welcome receipt, rather than proposal time
+  ---
+  duration_ms: 0.3759
+  type: 'test'
+  ...
+# Subtest: planning before the deadline succeeds and planning at its exact boundary fails
+ok 411 - planning before the deadline succeeds and planning at its exact boundary fails
+  ---
+  duration_ms: 0.3725
+  type: 'test'
+  ...
+# Subtest: acknowledgement at the exact subscribe deadline fails closed
+ok 412 - acknowledgement at the exact subscribe deadline fails closed
+  ---
+  duration_ms: 0.4864
+  type: 'test'
+  ...
+# Subtest: missing, future, noninteger and unsafe local welcome receipts cannot start a window
+ok 413 - missing, future, noninteger and unsafe local welcome receipts cannot start a window
+  ---
+  duration_ms: 1.0633
+  type: 'test'
+  ...
+# Subtest: repeated same-session plans cannot replace the original welcome receive time
+ok 414 - repeated same-session plans cannot replace the original welcome receive time
+  ---
+  duration_ms: 1.5356
+  type: 'test'
+  ...
+# Subtest: different active session is rejected without extending the planned deadline
+ok 415 - different active session is rejected without extending the planned deadline
+  ---
+  duration_ms: 0.455
+  type: 'test'
+  ...
+# Subtest: fresh validation allows another session but cannot extend a previously recorded session window
+ok 416 - fresh validation allows another session but cannot extend a previously recorded session window
+  ---
+  duration_ms: 1.5478
+  type: 'test'
+  ...
+# Subtest: invalidation and revalidation do not reset the first receive time of an expired session
+ok 417 - invalidation and revalidation do not reset the first receive time of an expired session
+  ---
+  duration_ms: 0.5491
+  type: 'test'
+  ...
+# Subtest: acknowledgement requires exact 202, enabled singleton subscription and matching identity fields
+ok 418 - acknowledgement requires exact 202, enabled singleton subscription and matching identity fields
+  ---
+  duration_ms: 3.3633
+  type: 'test'
+  ...
+# Subtest: extra official acknowledgement fields are discarded instead of exposed in state
+ok 419 - extra official acknowledgement fields are discarded instead of exposed in state
+  ---
+  duration_ms: 0.6549
+  type: 'test'
+  ...
+# Subtest: credential-shaped fields anywhere in validation or acknowledgement are rejected without echo or retention
+ok 420 - credential-shaped fields anywhere in validation or acknowledgement are rejected without echo or retention
+  ---
+  duration_ms: 64.4863
+  type: 'test'
+  ...
+# Subtest: receipt getters are rejected without invoking accessors or retrieving their values
+ok 421 - receipt getters are rejected without invoking accessors or retrieving their values
+  ---
+  duration_ms: 1.1366
+  type: 'test'
+  ...
+# Subtest: cyclic, deeply nested and oversized object receipts fail within bounded scanning policy
+ok 422 - cyclic, deeply nested and oversized object receipts fail within bounded scanning policy
+  ---
+  duration_ms: 32.8465
+  type: 'test'
+  ...
+# Subtest: snapshots and request proposals are deeply frozen and input mutation cannot change pinned output
+ok 423 - snapshots and request proposals are deeply frozen and input mutation cannot change pinned output
+  ---
+  duration_ms: 3.6627
+  type: 'test'
+  ...
+# Subtest: local invalidation clears acknowledgement and does not echo its caller-supplied reason
+ok 424 - local invalidation clears acknowledgement and does not echo its caller-supplied reason
+  ---
+  duration_ms: 0.6919
+  type: 'test'
+  ...
+# Subtest: offline validation and acknowledgement still cannot authorize unverified EventSub vote intake
+ok 425 - offline validation and acknowledgement still cannot authorize unverified EventSub vote intake
+  ---
+  duration_ms: 2.7583
+  type: 'test'
+  ...
+# Subtest: constructor rejects invalid identities, policy values, limits and clocks
+ok 426 - constructor rejects invalid identities, policy values, limits and clocks
+  ---
+  duration_ms: 1.3296
+  type: 'test'
+  ...
+# Subtest: factory requires explicit fetch and synchronous credential resolver; no default service path exists
+ok 427 - factory requires explicit fetch and synchronous credential resolver; no default service path exists
+  ---
+  duration_ms: 49.5027
+  type: 'test'
+  ...
+# Subtest: validation uses the fixed URL and OAuth header without cookies, cache, redirects or token URLs
+ok 428 - validation uses the fixed URL and OAuth header without cookies, cache, redirects or token URLs
+  ---
+  duration_ms: 49.6851
+  type: 'test'
+  ...
+# Subtest: subscription sends only the pinned JSON body, fixed Client-Id and Bearer authorization
+ok 429 - subscription sends only the pinned JSON body, fixed Client-Id and Bearer authorization
+  ---
+  duration_ms: 2.134
+  type: 'test'
+  ...
+# Subtest: endpoint, method, nested identity and extra request fields fail before credential resolution or fetch
+ok 430 - endpoint, method, nested identity and extra request fields fail before credential resolution or fetch
+  ---
+  duration_ms: 8.995
+  type: 'test'
+  ...
+# Subtest: request getters and cycles are rejected without invoking getters or resolving credentials
+ok 431 - request getters and cycles are rejected without invoking getters or resolving credentials
+  ---
+  duration_ms: 1.1094
+  type: 'test'
+  ...
+# Subtest: pre-aborted or invalid external signal prevents credential resolution and fetch
+ok 432 - pre-aborted or invalid external signal prevents credential resolution and fetch
+  ---
+  duration_ms: 12.409
+  type: 'test'
+  ...
+# Subtest: resolver exceptions and invalid/async token results are sanitized before fetch
+ok 433 - resolver exceptions and invalid/async token results are sanitized before fetch
+  ---
+  duration_ms: 3.0814
+  type: 'test'
+  ...
+# Subtest: validation projects extra response fields without exposing unknown data or extra scopes
+ok 434 - validation projects extra response fields without exposing unknown data or extra scopes
+  ---
+  duration_ms: 1.1481
+  type: 'test'
+  ...
+# Subtest: validation cannot repair wrong identities, missing read scope or invalid expiry
+ok 435 - validation cannot repair wrong identities, missing read scope or invalid expiry
+  ---
+  duration_ms: 3.6974
+  type: 'test'
+  ...
+# Subtest: all scope members are checked before projecting the required read scope
+ok 436 - all scope members are checked before projecting the required read scope
+  ---
+  duration_ms: 5.7115
+  type: 'test'
+  ...
+# Subtest: acknowledgement requires exact singleton, enabled status, conditions and session before projection
+ok 437 - acknowledgement requires exact singleton, enabled status, conditions and session before projection
+  ---
+  duration_ms: 5.8274
+  type: 'test'
+  ...
+# Subtest: acknowledgement discards official extras without leaking raw receipt fields
+ok 438 - acknowledgement discards official extras without leaking raw receipt fields
+  ---
+  duration_ms: 1.0477
+  type: 'test'
+  ...
+# Subtest: a projected field that would echo the resolved credential is rejected
+ok 439 - a projected field that would echo the resolved credential is rejected
+  ---
+  duration_ms: 0.6684
+  type: 'test'
+  ...
+# Subtest: 401, redirect and other non-success statuses discard bodies without reading or awaiting cancellation
+ok 440 - 401, redirect and other non-success statuses discard bodies without reading or awaiting cancellation
+  ---
+  duration_ms: 1.6879
+  type: 'test'
+  ...
+# Subtest: fetch, reader and body-access exceptions never echo credential/error data
+ok 441 - fetch, reader and body-access exceptions never echo credential/error data
+  ---
+  duration_ms: 1.5036
+  type: 'test'
+  ...
+# Subtest: success without a valid byte-stream reader or integer status is rejected
+ok 442 - success without a valid byte-stream reader or integer status is rejected
+  ---
+  duration_ms: 2.0112
+  type: 'test'
+  ...
+# Subtest: JSON at exactly 65536 streamed bytes passes and one additional byte fails
+ok 443 - JSON at exactly 65536 streamed bytes passes and one additional byte fails
+  ---
+  duration_ms: 1.6739
+  type: 'test'
+  ...
+# Subtest: the body cap counts UTF8 bytes rather than JavaScript characters and cleanup cannot hang rejection
+ok 444 - the body cap counts UTF8 bytes rather than JavaScript characters and cleanup cannot hang rejection
+  ---
+  duration_ms: 2.477
+  type: 'test'
+  ...
+# Subtest: stream decoding handles split UTF8 sequences and rejects invalid UTF8, JSON and nonbyte chunks
+ok 445 - stream decoding handles split UTF8 sequences and rejects invalid UTF8, JSON and nonbyte chunks
+  ---
+  duration_ms: 1.869
+  type: 'test'
+  ...
+# Subtest: empty-fragment floods are bounded even when their total byte count is small
+ok 446 - empty-fragment floods are bounded even when their total byte count is small
+  ---
+  duration_ms: 2004.2502
+  type: 'test'
+  ...
+# Subtest: hanging fetch that ignores AbortSignal still settles at the hard timeout
+ok 447 - hanging fetch that ignores AbortSignal still settles at the hard timeout
+  ---
+  duration_ms: 21.0675
+  type: 'test'
+  ...
+# Subtest: external cancellation settles hanging fetch and ignores its private abort reason
+ok 448 - external cancellation settles hanging fetch and ignores its private abort reason
+  ---
+  duration_ms: 1.9442
+  type: 'test'
+  ...
+# Subtest: a response arriving after timeout is cancelled without reading and cannot return success
+ok 449 - a response arriving after timeout is cancelled without reading and cannot return success
+  ---
+  duration_ms: 1.7695
+  type: 'test'
+  ...
+# Subtest: timeout covers hanging body reads, with nonblocking reader cancellation and lock cleanup
+ok 450 - timeout covers hanging body reads, with nonblocking reader cancellation and lock cleanup
+  ---
+  duration_ms: 175.8709
+  type: 'test'
+  ...
+# Subtest: the same deadline spans fetch and body decode without restarting after response headers
+ok 451 - the same deadline spans fetch and body decode without restarting after response headers
+  ---
+  duration_ms: 1.2982
+  type: 'test'
+  ...
+# Subtest: external cancellation also covers body reads and later bytes cannot produce a receipt
+ok 452 - external cancellation also covers body reads and later bytes cannot produce a receipt
+  ---
+  duration_ms: 1.1513
+  type: 'test'
+  ...
+# Subtest: projected receipts and adapter surface are deeply frozen
+ok 453 - projected receipts and adapter surface are deeply frozen
+  ---
+  duration_ms: 1.0937
+  type: 'test'
+  ...
+# Subtest: actual HTTP adapter/coordinator modules compose with synthetic dependencies while the board still rejects their events
+ok 454 - actual HTTP adapter/coordinator modules compose with synthetic dependencies while the board still rejects their events
+  ---
+  duration_ms: 11.859
+  type: 'test'
+  ...
+# Subtest: default deadline keeps a standalone Node process alive until a hanging fake fetch rejects
+ok 455 - default deadline keeps a standalone Node process alive until a hanging fake fetch rejects
+  ---
+  duration_ms: 227.1883
+  type: 'test'
+  ...
+# Subtest: credential resolution cannot mutate a previously checked request into a different outgoing subscription
+ok 456 - credential resolution cannot mutate a previously checked request into a different outgoing subscription
+  ---
+  duration_ms: 0.996
+  type: 'test'
+  ...
+# Subtest: coordinator I/O deadline keeps a standalone process alive until hanging fake connect returns transport_timeout
+ok 457 - coordinator I/O deadline keeps a standalone process alive until hanging fake connect returns transport_timeout
+  ---
+  duration_ms: 213.717
+  type: 'test'
+  ...
+# Subtest: validate: actual 65536-byte Uint8Array and Buffer boundaries are accepted and projected privately
+ok 458 - validate: actual 65536-byte Uint8Array and Buffer boundaries are accepted and projected privately
+  ---
+  duration_ms: 8.7168
+  type: 'test'
+  ...
+# Subtest: validate: real oversized typed arrays and decorated Buffers cannot spoof byteLength with a data property
+ok 459 - validate: real oversized typed arrays and decorated Buffers cannot spoof byteLength with a data property
+  ---
+  duration_ms: 5.4054
+  type: 'test'
+  ...
+# Subtest: validate: oversized byteLength accessors are never invoked and size rejection precedes malformed UTF8 decoding
+ok 460 - validate: oversized byteLength accessors are never invoked and size rejection precedes malformed UTF8 decoding
+  ---
+  duration_ms: 3.011
+  type: 'test'
+  ...
+# Subtest: validate: byte accounting uses cumulative view lengths and offsets rather than backing-buffer length
+ok 461 - validate: byte accounting uses cumulative view lengths and offsets rather than backing-buffer length
+  ---
+  duration_ms: 36.6381
+  type: 'test'
+  ...
+# Subtest: validate: typed-array Proxy brand failures are fixed invalid_response without reading proxy properties
+ok 462 - validate: typed-array Proxy brand failures are fixed invalid_response without reading proxy properties
+  ---
+  duration_ms: 3.6675
+  type: 'test'
+  ...
+# Subtest: validate: read-result accessors cannot switch small byte counts to oversized decoder input
+ok 463 - validate: read-result accessors cannot switch small byte counts to oversized decoder input
+  ---
+  duration_ms: 2.4235
+  type: 'test'
+  ...
+# Subtest: subscribe: actual 65536-byte Uint8Array and Buffer boundaries are accepted and projected privately
+ok 464 - subscribe: actual 65536-byte Uint8Array and Buffer boundaries are accepted and projected privately
+  ---
+  duration_ms: 3.1341
+  type: 'test'
+  ...
+# Subtest: subscribe: real oversized typed arrays and decorated Buffers cannot spoof byteLength with a data property
+ok 465 - subscribe: real oversized typed arrays and decorated Buffers cannot spoof byteLength with a data property
+  ---
+  duration_ms: 3.5526
+  type: 'test'
+  ...
+# Subtest: subscribe: oversized byteLength accessors are never invoked and size rejection precedes malformed UTF8 decoding
+ok 466 - subscribe: oversized byteLength accessors are never invoked and size rejection precedes malformed UTF8 decoding
+  ---
+  duration_ms: 2.7707
+  type: 'test'
+  ...
+# Subtest: subscribe: byte accounting uses cumulative view lengths and offsets rather than backing-buffer length
+ok 467 - subscribe: byte accounting uses cumulative view lengths and offsets rather than backing-buffer length
+  ---
+  duration_ms: 2.806
+  type: 'test'
+  ...
+# Subtest: subscribe: typed-array Proxy brand failures are fixed invalid_response without reading proxy properties
+ok 468 - subscribe: typed-array Proxy brand failures are fixed invalid_response without reading proxy properties
+  ---
+  duration_ms: 0.9339
+  type: 'test'
+  ...
+# Subtest: subscribe: read-result accessors cannot switch small byte counts to oversized decoder input
+ok 469 - subscribe: read-result accessors cannot switch small byte counts to oversized decoder input
+  ---
+  duration_ms: 1.4591
+  type: 'test'
+  ...
+# Subtest: owned reader cleanup observes rejected native release promises without awaiting or assimilating then getters
+ok 470 - owned reader cleanup observes rejected native release promises without awaiting or assimilating then getters
+  ---
+  duration_ms: 393.0431
+  type: 'test'
+  ...
+# Subtest: late response fallback cleanup remains nonblocking and observes native release rejections privately
+ok 471 - late response fallback cleanup remains nonblocking and observes native release rejections privately
+  ---
+  duration_ms: 486.6223
+  type: 'test'
+  ...
+# Subtest: new coordinator is idle and requires explicit injected adapters rather than opening a network path
+ok 472 - new coordinator is idle and requires explicit injected adapters rather than opening a network path
+  ---
+  duration_ms: 5.7058
+  type: 'test'
+  ...
+# Subtest: startup validates before connecting and does not subscribe before welcome
+ok 473 - startup validates before connecting and does not subscribe before welcome
+  ---
+  duration_ms: 47.703
+  type: 'test'
+  ...
+# Subtest: opaque credentials are passed by reference only to private validate/subscribe adapters
+ok 474 - opaque credentials are passed by reference only to private validate/subscribe adapters
+  ---
+  duration_ms: 12.012
+  type: 'test'
+  ...
+# Subtest: identity, scope and 401 validation mismatches fail before opening a socket
+ok 475 - identity, scope and 401 validation mismatches fail before opening a socket
+  ---
+  duration_ms: 2.5344
+  type: 'test'
+  ...
+# Subtest: credential-shaped fields in adapter receipts cannot become public state or permit connection
+ok 476 - credential-shaped fields in adapter receipts cannot become public state or permit connection
+  ---
+  duration_ms: 1.5395
+  type: 'test'
+  ...
+# Subtest: validation and connect adapter exceptions are sanitized and fail closed
+ok 477 - validation and connect adapter exceptions are sanitized and fail closed
+  ---
+  duration_ms: 1.051
+  type: 'test'
+  ...
+# Subtest: a malformed welcome cannot subscribe or emit a chat event
+ok 478 - a malformed welcome cannot subscribe or emit a chat event
+  ---
+  duration_ms: 0.9813
+  type: 'test'
+  ...
+# Subtest: welcome timeout closes the socket and removes owned timers
+ok 479 - welcome timeout closes the socket and removes owned timers
+  ---
+  duration_ms: 3.8043
+  type: 'test'
+  ...
+# Subtest: matching acknowledgement enables guarded events only with transport-unverified provenance
+ok 480 - matching acknowledgement enables guarded events only with transport-unverified provenance
+  ---
+  duration_ms: 2.3861
+  type: 'test'
+  ...
+# Subtest: notifications before acknowledgement are not buffered and emitted later
+ok 481 - notifications before acknowledgement are not buffered and emitted later
+  ---
+  duration_ms: 4.9741
+  type: 'test'
+  ...
+# Subtest: non-202, mismatched subscription and credential-bearing acknowledgement close intake
+ok 482 - non-202, mismatched subscription and credential-bearing acknowledgement close intake
+  ---
+  duration_ms: 31.3881
+  type: 'test'
+  ...
+# Subtest: subscription adapter exception is sanitized and closes the socket
+ok 483 - subscription adapter exception is sanitized and closes the socket
+  ---
+  duration_ms: 0.7542
+  type: 'test'
+  ...
+# Subtest: delayed acknowledgement cannot extend the original welcome liveness deadline
+ok 484 - delayed acknowledgement cannot extend the original welcome liveness deadline
+  ---
+  duration_ms: 5.4535
+  type: 'test'
+  ...
+# Subtest: valid pending keepalive updates receive-clock liveness without buffering chat
+ok 485 - valid pending keepalive updates receive-clock liveness without buffering chat
+  ---
+  duration_ms: 3.0878
+  type: 'test'
+  ...
+# Subtest: late subscription acknowledgement after the exact local deadline cannot revive a run
+ok 486 - late subscription acknowledgement after the exact local deadline cannot revive a run
+  ---
+  duration_ms: 2.9067
+  type: 'test'
+  ...
+# Subtest: delivery and chat replays are suppressed and invalid-channel frames never reach callbacks
+ok 487 - delivery and chat replays are suppressed and invalid-channel frames never reach callbacks
+  ---
+  duration_ms: 3.4689
+  type: 'test'
+  ...
+# Subtest: keepalive refreshes the guard watchdog while malformed replay cannot refresh it
+ok 488 - keepalive refreshes the guard watchdog while malformed replay cannot refresh it
+  ---
+  duration_ms: 5.2048
+  type: 'test'
+  ...
+# Subtest: matching revocation and reconnect freeze intake and close the owned socket
+ok 489 - matching revocation and reconnect freeze intake and close the owned socket
+  ---
+  duration_ms: 10.0481
+  type: 'test'
+  ...
+# Subtest: disconnect and transport-error callbacks fail closed without publishing private error text
+ok 490 - disconnect and transport-error callbacks fail closed without publishing private error text
+  ---
+  duration_ms: 1.962
+  type: 'test'
+  ...
+# Subtest: a throwing event callback is sanitized and stops further event delivery
+ok 491 - a throwing event callback is sanitized and stops further event delivery
+  ---
+  duration_ms: 1.3658
+  type: 'test'
+  ...
+# Subtest: stop clears timers/socket and makes all captured callbacks unable to revive the run
+ok 492 - stop clears timers/socket and makes all captured callbacks unable to revive the run
+  ---
+  duration_ms: 1.2576
+  type: 'test'
+  ...
+# Subtest: late validation and late socket handles after stop are discarded and closed privately
+ok 493 - late validation and late socket handles after stop are discarded and closed privately
+  ---
+  duration_ms: 3.8562
+  type: 'test'
+  ...
+# Subtest: a late acknowledgement after stop cannot establish an inbox
+ok 494 - a late acknowledgement after stop cannot establish an inbox
+  ---
+  duration_ms: 4.6409
+  type: 'test'
+  ...
+# Subtest: active duplicate start cannot create another socket and old callbacks cannot affect a fresh run
+ok 495 - active duplicate start cannot create another socket and old callbacks cannot affect a fresh run
+  ---
+  duration_ms: 3.0625
+  type: 'test'
+  ...
+# Subtest: periodic validation is injected and a failed refresh removes the prior receiving state
+ok 496 - periodic validation is injected and a failed refresh removes the prior receiving state
+  ---
+  duration_ms: 4.7335
+  type: 'test'
+  ...
+# Subtest: successful refresh keeps the same subscription and does not resubscribe
+ok 497 - successful refresh keeps the same subscription and does not resubscribe
+  ---
+  duration_ms: 1.9319
+  type: 'test'
+  ...
+# Subtest: coordinated synthetic events still cannot vote or publish a source cue in the existing board
+ok 498 - coordinated synthetic events still cannot vote or publish a source cue in the existing board
+  ---
+  duration_ms: 3.2129
+  type: 'test'
+  ...
+# Subtest: public snapshots are frozen aggregates and contain no credential, channel, session or raw chat data
+ok 499 - public snapshots are frozen aggregates and contain no credential, channel, session or raw chat data
+  ---
+  duration_ms: 1.9675
+  type: 'test'
+  ...
+# Subtest: stopping a hanging validation aborts its signal and settles start before the adapter resolves
+ok 500 - stopping a hanging validation aborts its signal and settles start before the adapter resolves
+  ---
+  duration_ms: 2.2666
+  type: 'test'
+  ...
+# Subtest: hanging validation and connect adapters terminate at the injected I/O timeout
+ok 501 - hanging validation and connect adapters terminate at the injected I/O timeout
+  ---
+  duration_ms: 1.7148
+  type: 'test'
+  ...
+# Subtest: hanging subscription aborts at its I/O timeout and late acknowledgement cannot revive intake
+ok 502 - hanging subscription aborts at its I/O timeout and late acknowledgement cannot revive intake
+  ---
+  duration_ms: 2.9634
+  type: 'test'
+  ...
+# Subtest: a cancelled but already queued old timer cannot remove ownership of the new run timer
+ok 503 - a cancelled but already queued old timer cannot remove ownership of the new run timer
+  ---
+  duration_ms: 11.6416
+  type: 'test'
+  ...
+# Subtest: factory and callbacks are explicit, with invalid configuration rejected before socket construction
+ok 504 - factory and callbacks are explicit, with invalid configuration rejected before socket construction
+  ---
+  duration_ms: 7.1558
+  type: 'test'
+  ...
+# Subtest: configuration and callback getters are not invoked
+ok 505 - configuration and callback getters are not invoked
+  ---
+  duration_ms: 0.8433
+  type: 'test'
+  ...
+# Subtest: fixed endpoint and frozen receiver options contain no credential or caller-supplied URL
+ok 506 - fixed endpoint and frozen receiver options contain no credential or caller-supplied URL
+  ---
+  duration_ms: 13.153
+  type: 'test'
+  ...
+# Subtest: factory errors and invalid socket objects are sanitized
+ok 507 - factory errors and invalid socket objects are sanitized
+  ---
+  duration_ms: 2.0671
+  type: 'test'
+  ...
+# Subtest: async factories are rejected and late resolved socket resources are closed without unhandled errors
+ok 508 - async factories are rejected and late resolved socket resources are closed without unhandled errors
+  ---
+  duration_ms: 4.792
+  type: 'test'
+  ...
+# Subtest: connect remains pending until open and resolves only once without application sends
+ok 509 - connect remains pending until open and resolves only once without application sends
+  ---
+  duration_ms: 2.2755
+  type: 'test'
+  ...
+# Subtest: pre-abort and invalid signals prevent socket creation
+ok 510 - pre-abort and invalid signals prevent socket creation
+  ---
+  duration_ms: 0.9229
+  type: 'test'
+  ...
+# Subtest: abort, timeout, error and close before open reject once, clean listeners and ignore late activity
+ok 511 - abort, timeout, error and close before open reject once, clean listeners and ignore late activity
+  ---
+  duration_ms: 4.0896
+  type: 'test'
+  ...
+# Subtest: manual close is nonblocking void, removes hooks and never invokes disconnect/error callbacks
+ok 512 - manual close is nonblocking void, removes hooks and never invokes disconnect/error callbacks
+  ---
+  duration_ms: 1.4874
+  type: 'test'
+  ...
+# Subtest: remote close reports one zero-argument disconnect and later errors are harmless
+ok 513 - remote close reports one zero-argument disconnect and later errors are harmless
+  ---
+  duration_ms: 1.3352
+  type: 'test'
+  ...
+# Subtest: active abort and transport error report a fixed Error once and terminate without disconnect
+ok 514 - active abort and transport error report a fixed Error once and terminate without disconnect
+  ---
+  duration_ms: 3.4986
+  type: 'test'
+  ...
+# Subtest: text, Buffer and sliced Uint8Array frames are decoded without application sends
+ok 515 - text, Buffer and sliced Uint8Array frames are decoded without application sends
+  ---
+  duration_ms: 1.4218
+  type: 'test'
+  ...
+# Subtest: binary flags, absent flags, invalid types and malformed UTF8 fail closed
+ok 516 - binary flags, absent flags, invalid types and malformed UTF8 fail closed
+  ---
+  duration_ms: 2.7858
+  type: 'test'
+  ...
+# Subtest: frame limit admits exactly 65536 bytes and rejects an extra byte or multibyte overflow
+ok 517 - frame limit admits exactly 65536 bytes and rejects an extra byte or multibyte overflow
+  ---
+  duration_ms: 1.5347
+  type: 'test'
+  ...
+# Subtest: pending frame callback does not serialize later keepalive delivery
+ok 518 - pending frame callback does not serialize later keepalive delivery
+  ---
+  duration_ms: 1.041
+  type: 'test'
+  ...
+# Subtest: default pending callback cap accepts 32 and rejects the next without queueing it
+ok 519 - default pending callback cap accepts 32 and rejects the next without queueing it
+  ---
+  duration_ms: 1.6753
+  type: 'test'
+  ...
+# Subtest: settled callback promises release their configured pending slot
+ok 520 - settled callback promises release their configured pending slot
+  ---
+  duration_ms: 0.9494
+  type: 'test'
+  ...
+# Subtest: throwing or rejecting frame callbacks produce one sanitized failure with no unhandled rejection
+ok 521 - throwing or rejecting frame callbacks produce one sanitized failure with no unhandled rejection
+  ---
+  duration_ms: 2.7876
+  type: 'test'
+  ...
+# Subtest: error/disconnect callback exceptions and rejected cleanup promises cannot escape or recurse
+ok 522 - error/disconnect callback exceptions and rejected cleanup promises cannot escape or recurse
+  ---
+  duration_ms: 4.8266
+  type: 'test'
+  ...
+# Subtest: terminal error sink is installed before terminate can synchronously emit an error
+ok 523 - terminal error sink is installed before terminate can synchronously emit an error
+  ---
+  duration_ms: 1.6382
+  type: 'test'
+  ...
+# Subtest: default connection deadline keeps a standalone Node process alive with a never-opening fake socket
+ok 524 - default connection deadline keeps a standalone Node process alive with a never-opening fake socket
+  ---
+  duration_ms: 510.1423
+  type: 'test'
+  ...
+# Subtest: actual HTTP/WS/coordinator modules process keepalive during pending subscribe with synthetic dependencies only
+ok 525 - actual HTTP/WS/coordinator modules process keepalive during pending subscribe with synthetic dependencies only
+  ---
+  duration_ms: 20.434
+  type: 'test'
+  ...
+# Subtest: actual65536-byte Uint8Array and Buffer messages are accepted independently without cumulative accounting
+ok 526 - actual65536-byte Uint8Array and Buffer messages are accepted independently without cumulative accounting
+  ---
+  duration_ms: 8.7727
+  type: 'test'
+  ...
+# Subtest: string limits count UTF8 bytes for valid multibyte text rather than JavaScript length
+ok 527 - string limits count UTF8 bytes for valid multibyte text rather than JavaScript length
+  ---
+  duration_ms: 5.4888
+  type: 'test'
+  ...
+# Subtest: delivered view offset and length determine the boundary even when backing storage is larger or malformed
+ok 528 - delivered view offset and length determine the boundary even when backing storage is larger or malformed
+  ---
+  duration_ms: 10.009
+  type: 'test'
+  ...
+# Subtest: Uint8Array: oversized own byteLength0 data property cannot bypass actual frame cap
+ok 529 - Uint8Array: oversized own byteLength0 data property cannot bypass actual frame cap
+  ---
+  duration_ms: 1.479
+  type: 'test'
+  ...
+# Subtest: Uint8Array: byteLength getter switching zero to real length cannot admit actual65537 bytes or execute getters
+ok 530 - Uint8Array: byteLength getter switching zero to real length cannot admit actual65537 bytes or execute getters
+  ---
+  duration_ms: 0.9684
+  type: 'test'
+  ...
+# Subtest: Uint8Array: valid decorated views preserve exact text while buffer, offset and length shadows stay unread
+ok 531 - Uint8Array: valid decorated views preserve exact text while buffer, offset and length shadows stay unread
+  ---
+  duration_ms: 1.4117
+  type: 'test'
+  ...
+# Subtest: Buffer: oversized own byteLength0 data property cannot bypass actual frame cap
+ok 532 - Buffer: oversized own byteLength0 data property cannot bypass actual frame cap
+  ---
+  duration_ms: 7.4787
+  type: 'test'
+  ...
+# Subtest: Buffer: byteLength getter switching zero to real length cannot admit actual65537 bytes or execute getters
+ok 533 - Buffer: byteLength getter switching zero to real length cannot admit actual65537 bytes or execute getters
+  ---
+  duration_ms: 0.7427
+  type: 'test'
+  ...
+# Subtest: Buffer: valid decorated views preserve exact text while buffer, offset and length shadows stay unread
+ok 534 - Buffer: valid decorated views preserve exact text while buffer, offset and length shadows stay unread
+  ---
+  duration_ms: 0.8981
+  type: 'test'
+  ...
+# Subtest: actual oversize wins before fatal UTF8 decoding and malformed small views fail with fixed private errors
+ok 535 - actual oversize wins before fatal UTF8 decoding and malformed small views fail with fixed private errors
+  ---
+  duration_ms: 2.0339
+  type: 'test'
+  ...
+# Subtest: typed-array and revoked Proxy brands fail once without reading properties, leaking raw errors or reviving callbacks
+ok 536 - typed-array and revoked Proxy brands fail once without reading properties, leaking raw errors or reviving callbacks
+  ---
+  duration_ms: 1.5024
+  type: 'test'
+  ...
+# Subtest: prototype traversal reentry cannot admit a frame after abort or exceed a newly occupied pending slot
+ok 537 - prototype traversal reentry cannot admit a frame after abort or exceed a newly occupied pending slot
+  ---
+  duration_ms: 16.3663
+  type: 'test'
+  ...
+# Subtest: Twurple host factory stays inert, rejects SDK mock routing and offers no event injection
+ok 538 - Twurple host factory stays inert, rejects SDK mock routing and offers no event injection
+  ---
+  duration_ms: 4.19
+  type: 'test'
+  ...
+# Subtest: installed Twurple auth, API and EventSub compose through isolated synthetic fetch/socket ports
+ok 539 - installed Twurple auth, API and EventSub compose through isolated synthetic fetch/socket ports
+  ---
+  duration_ms: 3796.7753
+  type: 'test'
+  ...
+# twurple-child-result {"exitCode":0,"stdout":"TAP version 13\\n\# (node:33144) ExperimentalWarning: Module mocking is an experimental feature and might change at any time\\n\# (Use `node --trace-warnings ...` to show where the warning was created)\\n\# (node:33144) DeprecationWarning: mock.module(): options.namedExports is deprecated. Use options.exports instead.\\n\# Subtest: actual SDK device grant, bound identity, subscription acknowledgement, tally, refresh and retirement\\nok 1 - actual SDK device grant, bound identity, subscription acknowledgement, tally, refresh and retirement\\n  ---\\n  duration_ms: 3423.7043\\n  type: 'test'\\n  ...\\n1..1\\n\# tests 1\\n\# suites 0\\n\# pass 1\\n\# fail 0\\n\# cancelled 0\\n\# skipped 0\\n\# todo 0\\n\# duration_ms 3663.4828\\n","stderr":""}
+1..539
+# tests 539
+# suites 0
+# pass 539
+# fail 0
+# cancelled 0
+# skipped 0
+# todo 0
+# duration_ms 13820.9014

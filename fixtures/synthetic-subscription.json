@@ -1,0 +1,157 @@
+{
+  "provenance": "synthetic",
+  "description": "Hand-authored offline validation and EventSub response shapes, not service responses or an OAuth authorization.",
+  "clockStart": "2026-10-25T00:00:00.000Z",
+  "configuration": {
+    "clientId": "synthetic-client-local",
+    "broadcasterId": "100",
+    "readerId": "100"
+  },
+  "steps": [
+    {
+      "elapsedMs": 0,
+      "label": "Synthetic validation receipt",
+      "action": "validation",
+      "input": {
+        "provenance": "synthetic",
+        "httpStatus": 200,
+        "body": {
+          "client_id": "synthetic-client-local",
+          "user_id": "100",
+          "scopes": [
+            "user:read:chat"
+          ],
+          "expires_in": 120,
+          "login": "synthetic-not-a-real-login"
+        }
+      },
+      "expectedOk": true
+    },
+    {
+      "elapsedMs": 1000,
+      "label": "Build proposal from captured synthetic welcome receive time",
+      "action": "plan",
+      "input": {
+        "sessionId": "synthetic-preflight-1",
+        "welcomeReceivedAtOffsetMs": 500
+      },
+      "expectedOk": true
+    },
+    {
+      "elapsedMs": 2000,
+      "label": "Replay cannot extend the original deadline",
+      "action": "plan",
+      "input": {
+        "sessionId": "synthetic-preflight-1",
+        "welcomeReceivedAtOffsetMs": 2000
+      },
+      "expectedOk": false
+    },
+    {
+      "elapsedMs": 2500,
+      "label": "Matching synthetic acknowledgement",
+      "action": "ack",
+      "input": {
+        "provenance": "synthetic",
+        "httpStatus": 202,
+        "body": {
+          "data": [
+            {
+              "id": "synthetic-sub-preflight-1",
+              "status": "enabled",
+              "type": "channel.chat.message",
+              "version": "1",
+              "condition": {
+                "broadcaster_user_id": "100",
+                "user_id": "100"
+              },
+              "transport": {
+                "method": "websocket",
+                "session_id": "synthetic-preflight-1"
+              }
+            }
+          ]
+        }
+      },
+      "expectedOk": true
+    },
+    {
+      "elapsedMs": 3000,
+      "label": "Synthetic401 revokes earlier eligibility",
+      "action": "validation",
+      "input": {
+        "provenance": "synthetic",
+        "httpStatus": 401,
+        "body": {}
+      },
+      "expectedOk": false
+    },
+    {
+      "elapsedMs": 3500,
+      "label": "No request after failed validation",
+      "action": "plan",
+      "input": {
+        "sessionId": "synthetic-blocked",
+        "welcomeReceivedAtOffsetMs": 3500
+      },
+      "expectedOk": false
+    },
+    {
+      "elapsedMs": 4000,
+      "label": "New synthetic validation",
+      "action": "validation",
+      "input": {
+        "provenance": "synthetic",
+        "httpStatus": 200,
+        "body": {
+          "client_id": "synthetic-client-local",
+          "user_id": "100",
+          "scopes": [
+            "user:read:chat"
+          ],
+          "expires_in": 120,
+          "login": "synthetic-not-a-real-login"
+        }
+      },
+      "expectedOk": true
+    },
+    {
+      "elapsedMs": 5000,
+      "label": "New session proposal",
+      "action": "plan",
+      "input": {
+        "sessionId": "synthetic-preflight-2",
+        "welcomeReceivedAtOffsetMs": 4500
+      },
+      "expectedOk": true
+    },
+    {
+      "elapsedMs": 14500,
+      "label": "Exact local acknowledgement deadline fails closed",
+      "action": "ack",
+      "input": {
+        "provenance": "synthetic",
+        "httpStatus": 202,
+        "body": {
+          "data": [
+            {
+              "id": "synthetic-sub-preflight-2",
+              "status": "enabled",
+              "type": "channel.chat.message",
+              "version": "1",
+              "condition": {
+                "broadcaster_user_id": "100",
+                "user_id": "100"
+              },
+              "transport": {
+                "method": "websocket",
+                "session_id": "synthetic-preflight-2"
+              }
+            }
+          ]
+        }
+      },
+      "expectedOk": false
+    }
+  ]
+}
