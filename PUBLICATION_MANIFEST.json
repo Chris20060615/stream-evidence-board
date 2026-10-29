@@ -1,8 +1,9 @@
 {
   "artifact": "source-release-manifest",
-  "preparedAtBeijing": "2026-10-28T23:22:16.849154+08:00",
+  "preparedAtBeijing": "2026-10-29T10:14:51.530493+08:00",
   "runtimeVersion": "0.22.1",
   "intendedRepository": "https://github.com/Chris20060615/stream-evidence-board",
+  "youtubeUrl": "https://www.youtube.com/watch?v=jZAATw1ZT_w",
   "files": [
     {
       "path": ".gitignore",
@@ -12,9 +13,9 @@
     },
     {
       "path": "AI_USAGE.md",
-      "bytes": 1946,
-      "sha256": "409F38CE4136352FF62F7FD68EF8070E25C112D028E571B1744B1EEEAB010153",
-      "gitBlobSha": "2efd0f498e4a95a4948f8e4e814f4bf281ed4571"
+      "bytes": 1903,
+      "sha256": "8F2E96E3B96E6A1C58D33098E6B2969A5E5B4473819FD0ECAAC013831458A11D",
+      "gitBlobSha": "a5096b09d7234dbca504ff28e7f75ba34fa8c72a"
     },
     {
       "path": "docs/credential-session-host.md",
@@ -119,6 +120,12 @@
       "gitBlobSha": "8828d03a2d5a10ea313338510e02ac742b7ddd8c"
     },
     {
+      "path": "docs/recorded-self-test.md",
+      "bytes": 1069,
+      "sha256": "C3F6EBEE621242C9C9A8CAB7F933B87781C7A2C7149F2924C4FB883BC845727B",
+      "gitBlobSha": "de8f183483a52a92e3e2c9fadccee4b8f53ff3de"
+    },
+    {
       "path": "docs/release-package-stage31.json",
       "bytes": 1488,
       "sha256": "FDA282EACE2E9AF7435CD979DDAAA31FF98861F166F62A75E8F489538FF38277",
@@ -156,9 +163,9 @@
     },
     {
       "path": "docs/twurple-live.md",
-      "bytes": 3868,
-      "sha256": "227219DF48698A488CF5B0CC4AE6816FAE8F23377C1DABD09BF237C8CC03B1F2",
-      "gitBlobSha": "37d119500bb00edcbddf54985250e0f22b3696c1"
+      "bytes": 3846,
+      "sha256": "652563C963E575B563ED9CD1221965172BCA2BF56A4AC59D18DC3CCD9FF513E3",
+      "gitBlobSha": "1dd9dc04be4aea033b8057cb57b2bdaddb6ab771"
     },
     {
       "path": "docs/validation-stage28-focused.tap",
@@ -221,10 +228,16 @@
       "gitBlobSha": "020a83eb8dceff1a91d9151ec0c26bcc57b90270"
     },
     {
+      "path": "JUDGE_GUIDE.md",
+      "bytes": 1253,
+      "sha256": "9BEF565039820FD76B1E3DB9A1243E9C398BAB162F2F45D638DA39BD1E376E95",
+      "gitBlobSha": "6dec287e154a7790489562fed3806b151e37e6a0"
+    },
+    {
       "path": "NOTICE.md",
-      "bytes": 884,
-      "sha256": "B5C5F46868210E0A1D4D25C72EE86993E78F13AA47C351F0348341315D1C8F28",
-      "gitBlobSha": "ce4f9f54ed2a55386735a517dfa04ff332581807"
+      "bytes": 1746,
+      "sha256": "63B8955F944B5DE7DCB03B251B93719F391859DD2473AB8122C082DDC08BC5CC",
+      "gitBlobSha": "3093d40ae821828026932dba4c5a039da57d61aa"
     },
     {
       "path": "package-lock.json",
@@ -234,9 +247,9 @@
     },
     {
       "path": "package.json",
-      "bytes": 2014,
-      "sha256": "F7471006C4957CD0B73500F804B4FDDE8E381AA683EBDECE4A0FFB2F0C1FDDB6",
-      "gitBlobSha": "0da76862dac3d78994d5effb371b9c675018778a"
+      "bytes": 1986,
+      "sha256": "2AFF3DD084B431C2002C8F9296DADEED0640BE50A668D6002A718D4BF39782CF",
+      "gitBlobSha": "6019255084d868efaf6d63cc987be56655de517d"
     },
     {
       "path": "public/app.mjs",
@@ -288,9 +301,9 @@
     },
     {
       "path": "README.md",
-      "bytes": 3888,
-      "sha256": "6613B2AF949C13D4EC36BF4837E81ED4853816F3F12EDE15B20CE9782AA7CD74",
-      "gitBlobSha": "93d262e74d075c6747961a8e809847ac53a8a025"
+      "bytes": 5057,
+      "sha256": "DD87E37FB8B4A2306AD1AF5A22F84BAC3CF9509366B13798C16EFD4A6E375DA1",
+      "gitBlobSha": "f6546500a0d1d5dd1a7ba53cb25e1fbaaf992dd1"
     },
     {
       "path": "scripts/authorize-twitch.mjs",
@@ -722,12 +735,8 @@
   "softwareChecksFromIdenticalExecutedRuntime": 539,
   "productTestsReexecutedForMetadata": false,
   "runtimeCliTestsFixturesVendorAndLockUnchanged": true,
-  "metadataOnlyChangesFromStage34": [
-    "package.json description",
-    "AI_USAGE.md publication authorization wording",
-    "README.md and docs/twurple-live.md repository status"
-  ],
   "privateUiImagesOrCredentialsIncluded": false,
+  "scope": "Current source/run/evidence/AI/judge documentation; original immutable releases retained.",
   "publicationResultRecordedSeparately": true,
-  "videoAndFinalSubmissionPending": true
+  "actualDevpostSubmissionPending": true
 }

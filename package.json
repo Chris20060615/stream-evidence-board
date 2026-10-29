@@ -3,7 +3,7 @@
   "version": "0.22.1",
   "private": true,
   "type": "module",
-  "description": "Own-channel Twitch evidence board with an observed real self-test; final media and submission pending.",
+  "description": "Own-channel Twitch evidence board with recorded chat-to-display operation.",
   "scripts": {
     "start": "node src/server.mjs",
     "test": "node --test",
